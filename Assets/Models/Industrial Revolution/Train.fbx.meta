@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 91db0c00b3b70874881214a36b7cb2b6
+timeCreated: 1495522633
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: train_car1_body.001
+    100004: train_car1_body.002
+    100006: train_car1_body.003
+    100008: train_car1_body.004
+    100010: train_car1_body.005
+    100012: train_car1_body.006
+    100014: train_car1_body.007
+    100016: train_car1_couplingrod
+    100018: train_car1_wheels1
+    100020: train_car1_wheels2
+    100022: train_car1_wheels3
+    100024: train_car1_wheels4
+    100026: train_car1_wheels5
+    100028: train_car2_body
+    100030: train_car2_couplingrod
+    100032: train_car2_wheels1
+    100034: train_car2_wheels2
+    100036: train_car2_wheels3
+    100038: train_car3_body
+    100040: train_car3_couplingrod
+    100042: train_car3_wheels1
+    100044: train_car3_wheels2
+    100046: train_car3_wheels3
+    100048: train_car3_wheels4
+    100050: train_car3_wheels5
+    400000: //RootNode
+    400002: train_car1_body.001
+    400004: train_car1_body.002
+    400006: train_car1_body.003
+    400008: train_car1_body.004
+    400010: train_car1_body.005
+    400012: train_car1_body.006
+    400014: train_car1_body.007
+    400016: train_car1_couplingrod
+    400018: train_car1_wheels1
+    400020: train_car1_wheels2
+    400022: train_car1_wheels3
+    400024: train_car1_wheels4
+    400026: train_car1_wheels5
+    400028: train_car2_body
+    400030: train_car2_couplingrod
+    400032: train_car2_wheels1
+    400034: train_car2_wheels2
+    400036: train_car2_wheels3
+    400038: train_car3_body
+    400040: train_car3_couplingrod
+    400042: train_car3_wheels1
+    400044: train_car3_wheels2
+    400046: train_car3_wheels3
+    400048: train_car3_wheels4
+    400050: train_car3_wheels5
+    2300000: //RootNode
+    2300002: train_car1_body.001
+    2300004: train_car1_body.002
+    2300006: train_car1_body.003
+    2300008: train_car1_body.004
+    2300010: train_car1_body.005
+    2300012: train_car1_body.006
+    2300014: train_car1_body.007
+    2300016: train_car1_couplingrod
+    2300018: train_car1_wheels1
+    2300020: train_car1_wheels2
+    2300022: train_car1_wheels3
+    2300024: train_car1_wheels4
+    2300026: train_car1_wheels5
+    2300028: train_car2_body
+    2300030: train_car2_couplingrod
+    2300032: train_car2_wheels1
+    2300034: train_car2_wheels2
+    2300036: train_car2_wheels3
+    2300038: train_car3_body
+    2300040: train_car3_couplingrod
+    2300042: train_car3_wheels1
+    2300044: train_car3_wheels2
+    2300046: train_car3_wheels3
+    2300048: train_car3_wheels4
+    2300050: train_car3_wheels5
+    3300000: //RootNode
+    3300002: train_car1_body.001
+    3300004: train_car1_body.002
+    3300006: train_car1_body.003
+    3300008: train_car1_body.004
+    3300010: train_car1_body.005
+    3300012: train_car1_body.006
+    3300014: train_car1_body.007
+    3300016: train_car1_couplingrod
+    3300018: train_car1_wheels1
+    3300020: train_car1_wheels2
+    3300022: train_car1_wheels3
+    3300024: train_car1_wheels4
+    3300026: train_car1_wheels5
+    3300028: train_car2_body
+    3300030: train_car2_couplingrod
+    3300032: train_car2_wheels1
+    3300034: train_car2_wheels2
+    3300036: train_car2_wheels3
+    3300038: train_car3_body
+    3300040: train_car3_couplingrod
+    3300042: train_car3_wheels1
+    3300044: train_car3_wheels2
+    3300046: train_car3_wheels3
+    3300048: train_car3_wheels4
+    3300050: train_car3_wheels5
+    4300000: train_car1_body
+    4300002: train_car2_body
+    4300004: train_car3_body
+    4300006: train_car1_body.007
+    4300008: train_car1_body.006
+    4300010: train_car1_body.005
+    4300012: train_car1_body.004
+    4300014: train_car1_body.003
+    4300016: train_car1_body.002
+    4300018: train_car1_body.001
+    4300020: train_car3_couplingrod
+    4300022: train_car3_wheels5
+    4300024: train_car3_wheels4
+    4300026: train_car3_wheels3
+    4300028: train_car3_wheels2
+    4300030: train_car3_wheels1
+    4300032: train_car2_couplingrod
+    4300034: train_car2_wheels1
+    4300036: train_car2_wheels2
+    4300038: train_car2_wheels3
+    4300040: train_car1_couplingrod
+    4300042: train_car1_wheels5
+    4300044: train_car1_wheels4
+    4300046: train_car1_wheels3
+    4300048: train_car1_wheels2
+    4300050: train_car1_wheels1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: bebf1cad956b76646aa5476731c6c5c9
+timeCreated: 1495522871
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Anim|BirdRed
+    100002: BirdRed
+    100004: Body
+    100006: Body_end
+    100008: Body_end_end
+    100010: Carpals.l
+    100012: Carpals.l_end
+    100014: Carpals.l_end_end
+    100016: Carpals.r
+    100018: Carpals.r_end
+    100020: Carpals.r_end_end
+    100022: Humerus.l
+    100024: Humerus.r
+    100026: IK.l
+    100028: IK.l_end
+    100030: IK.l_end_end
+    100032: IK.r
+    100034: IK.r_end
+    100036: IK.r_end_end
+    100038: //RootNode
+    100040: Radius.l
+    100042: Radius.r
+    400000: Anim|BirdRed
+    400002: BirdRed
+    400004: Body
+    400006: Body_end
+    400008: Body_end_end
+    400010: Carpals.l
+    400012: Carpals.l_end
+    400014: Carpals.l_end_end
+    400016: Carpals.r
+    400018: Carpals.r_end
+    400020: Carpals.r_end_end
+    400022: Humerus.l
+    400024: Humerus.r
+    400026: IK.l
+    400028: IK.l_end
+    400030: IK.l_end_end
+    400032: IK.r
+    400034: IK.r_end
+    400036: IK.r_end_end
+    400038: //RootNode
+    400040: Radius.l
+    400042: Radius.r
+    4300000: BirdRed
+    7400000: BirdRed
+    7400002: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.001
+    7400004: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.002
+    7400006: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.003
+    7400008: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.004
+    7400010: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.005
+    7400012: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.006
+    7400014: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|BirdBlue
+    7400016: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.000
+    7400018: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.001
+    7400020: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.002
+    7400022: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.003
+    7400024: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.004
+    7400026: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.005
+    7400028: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|Bir.006
+    7400030: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBrown.001|Anim|BirdBro
+    7400032: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.000
+    7400034: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.001
+    7400036: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.002
+    7400038: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.003
+    7400040: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.004
+    7400042: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.005
+    7400044: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdR.006
+    7400046: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdRed.001|Anim|BirdRed|A
+    7400048: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.001|Armature|Actio.000
+    7400050: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.001|Armature|Action|Ar
+    7400052: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.001|Armature|Armat.000
+    7400054: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.001|Armature|ArmatureA
+    7400056: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.002|Armature|Actio.000
+    7400058: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.002|Armature|Action|Ar
+    7400060: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.002|Armature|Armat.000
+    7400062: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature.002|Armature|ArmatureA
+    7400064: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|Action|Ar.000
+    7400066: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|Action|Ar.001
+    7400068: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|Action|Ar.002
+    7400070: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|Action|Armatu
+    7400072: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|ArmatureA.000
+    7400074: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|ArmatureA.001
+    7400076: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|ArmatureA.002
+    7400078: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Armature|Armature|ArmatureActio
+    7400080: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.000
+    7400082: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.001
+    7400084: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.002
+    7400086: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.003
+    7400088: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.004
+    7400090: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.005
+    7400092: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.006
+    7400094: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.007
+    7400096: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.008
+    7400098: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.009
+    7400100: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.010
+    7400102: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.011
+    7400104: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.012
+    7400106: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.013
+    7400108: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.014
+    7400110: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.015
+    7400112: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.016
+    7400114: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.017
+    7400116: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.018
+    7400118: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.019
+    7400120: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.020
+    7400122: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.021
+    7400124: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.022
+    7400126: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.023
+    7400128: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.024
+    7400130: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.025
+    7400132: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.026
+    7400134: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.027
+    7400136: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.028
+    7400138: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.029
+    7400140: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.030
+    7400142: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.031
+    7400144: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.032
+    7400146: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.033
+    7400148: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.034
+    7400150: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.035
+    7400152: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.036
+    7400154: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.037
+    7400156: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|Bi.038
+    7400158: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBlue.001|Anim|BirdBl
+    7400160: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.000
+    7400162: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.001
+    7400164: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.002
+    7400166: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.003
+    7400168: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.004
+    7400170: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.005
+    7400172: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|B.006
+    7400174: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdBrown.001|Anim|BirdB
+    7400176: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.000
+    7400178: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.001
+    7400180: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.002
+    7400182: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.003
+    7400184: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.004
+    7400186: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.005
+    7400188: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|Bir.006
+    7400190: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Anim|BirdRed.001|Anim|BirdRed
+    7400192: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.001|Armature|Act.000
+    7400194: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.001|Armature|Action|
+    7400196: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.001|Armature|Arm.000
+    7400198: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.001|Armature|Armatur
+    7400200: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.002|Armature|Act.000
+    7400202: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.002|Armature|Action|
+    7400204: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.002|Armature|Arm.000
+    7400206: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature.002|Armature|Armatur
+    7400208: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Action|.000
+    7400210: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Action|.001
+    7400212: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Action|.002
+    7400214: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Action|Arma
+    7400216: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Armatur.000
+    7400218: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Armatur.001
+    7400220: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|Armatur.002
+    7400222: Anim|BirdRed|Anim|BirdBrown.001|Anim|BirdBrown|Armature|Armature|ArmatureAct
+    7400224: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.001|Armature|Action|.000
+    7400226: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.001|Armature|Action|Arma
+    7400228: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.001|Armature|Armatur.000
+    7400230: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.001|Armature|ArmatureAct
+    7400232: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.002|Armature|Action|.000
+    7400234: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.002|Armature|Action|Arma
+    7400236: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.002|Armature|Armatur.000
+    7400238: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature.002|Armature|ArmatureAct
+    7400240: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|Action|Arma.000
+    7400242: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|Action|Arma.001
+    7400244: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|Action|Arma.002
+    7400246: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|Action|Armature
+    7400248: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|ArmatureAct.000
+    7400250: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|ArmatureAct.001
+    7400252: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|ArmatureAct.002
+    7400254: Anim|BirdRed|Anim|BirdRed.001|Anim|BirdRed|Armature|Armature|ArmatureAction|
+    7400256: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature.001|Armature|Action|Arma
+    7400258: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature.001|Armature|ArmatureAct
+    7400260: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature.002|Armature|Action|Arma
+    7400262: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature.002|Armature|ArmatureAct
+    7400264: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature|Armature|Action|Arma.000
+    7400266: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature|Armature|Action|Armature
+    7400268: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature|Armature|ArmatureAct.000
+    7400270: Anim|BirdRed|Anim|BirdRed.002|Anim|BirdRed|Armature|Armature|ArmatureAction|
+    7400272: Anim|BirdRed|Armature.001|Armature|Action|Armature|Action
+    7400274: Anim|BirdRed|Armature.001|Armature|ArmatureAction|Armature|ArmatureAction
+    7400276: Anim|BirdRed|Armature.002|Armature|Action|Armature|Action
+    7400278: Anim|BirdRed|Armature.002|Armature|ArmatureAction|Armature|ArmatureAction
+    7400280: Anim|BirdRed|Armature|Armature|Action|Armature|Action
+    7400282: Anim|BirdRed|Armature|Armature|Action|Armature|Action.001
+    7400284: Anim|BirdRed|Armature|Armature|ArmatureAction|Armature|ArmatureAction
+    7400286: Anim|BirdRed|Armature|Armature|ArmatureAction|Armature|ArmatureAction.001
+    9500000: //RootNode
+    13700000: BirdRed
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: BirdRed
+      takeName: Anim|BirdRed|Anim|BirdBlue.001|Anim|BirdBlue|Anim|BirdBlue.001|Anim|Bird.000
+      firstFrame: 0
+      lastFrame: 25
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anim|BirdRed
+        weight: 1
+      - path: Anim|BirdRed/Body
+        weight: 1
+      - path: Anim|BirdRed/Body/Body_end
+        weight: 1
+      - path: Anim|BirdRed/Body/Body_end/Body_end_end
+        weight: 1
+      - path: Anim|BirdRed/Humerus.l
+        weight: 1
+      - path: Anim|BirdRed/Humerus.l/Radius.l
+        weight: 1
+      - path: Anim|BirdRed/Humerus.l/Radius.l/Carpals.l
+        weight: 1
+      - path: Anim|BirdRed/Humerus.l/Radius.l/Carpals.l/Carpals.l_end
+        weight: 1
+      - path: Anim|BirdRed/Humerus.l/Radius.l/Carpals.l/Carpals.l_end/Carpals.l_end_end
+        weight: 1
+      - path: Anim|BirdRed/Humerus.r
+        weight: 1
+      - path: Anim|BirdRed/Humerus.r/Radius.r
+        weight: 1
+      - path: Anim|BirdRed/Humerus.r/Radius.r/Carpals.r
+        weight: 1
+      - path: Anim|BirdRed/Humerus.r/Radius.r/Carpals.r/Carpals.r_end
+        weight: 1
+      - path: Anim|BirdRed/Humerus.r/Radius.r/Carpals.r/Carpals.r_end/Carpals.r_end_end
+        weight: 1
+      - path: Anim|BirdRed/IK.l
+        weight: 1
+      - path: Anim|BirdRed/IK.l/IK.l_end
+        weight: 1
+      - path: Anim|BirdRed/IK.l/IK.l_end/IK.l_end_end
+        weight: 1
+      - path: Anim|BirdRed/IK.r
+        weight: 1
+      - path: Anim|BirdRed/IK.r/IK.r_end
+        weight: 1
+      - path: Anim|BirdRed/IK.r/IK.r_end/IK.r_end_end
+        weight: 1
+      - path: BirdRed
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.001052078
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

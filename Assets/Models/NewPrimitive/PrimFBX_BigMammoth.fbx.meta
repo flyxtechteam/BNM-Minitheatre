@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: 0090ec919229d86408b06b11f268f62f
+timeCreated: 1499354248
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Anim_Mammoth
+    100002: BackIK.L
+    100004: BackIK.L_end
+    100006: BackIK.R
+    100008: BackIK.R_end
+    100010: BackKnee.L
+    100012: BackKnee.L_end
+    100014: BackKnee.R
+    100016: BackKnee.R_end
+    100018: BackLowLeg.L
+    100020: BackLowLeg.L_end
+    100022: BackLowLeg.R
+    100024: BackLowLeg.R_end
+    100026: BackMidLeg.L
+    100028: BackMidLeg.R
+    100030: BackUpLeg.L
+    100032: BackUpLeg.R
+    100034: BodyBottom
+    100036: BodyUp
+    100038: FrontIK.L
+    100040: FrontIK.L_end
+    100042: FrontIK.R
+    100044: FrontIK.R_end
+    100046: FrontKnee.L
+    100048: FrontKnee.L_end
+    100050: FrontKnee.R
+    100052: FrontKnee.R_end
+    100054: FrontLowLeg.L
+    100056: FrontLowLeg.L_end
+    100058: FrontLowLeg.R
+    100060: FrontLowLeg.R_end
+    100062: FrontMidLeg.L
+    100064: FrontMidLeg.R
+    100066: FrontUpLeg.L
+    100068: FrontUpLeg.R
+    100070: Head
+    100072: Head.001
+    100074: Head.001_end
+    100076: IK
+    100078: IK_end
+    100080: Mammoth
+    100082: //RootNode
+    100084: TrunkLow
+    100086: TrunkMid
+    100088: TrunkMidLow
+    100090: TrunkTip
+    100092: TrunkTip_end
+    100094: TrunkUp
+    100096: Whole
+    400000: Anim_Mammoth
+    400002: BackIK.L
+    400004: BackIK.L_end
+    400006: BackIK.R
+    400008: BackIK.R_end
+    400010: BackKnee.L
+    400012: BackKnee.L_end
+    400014: BackKnee.R
+    400016: BackKnee.R_end
+    400018: BackLowLeg.L
+    400020: BackLowLeg.L_end
+    400022: BackLowLeg.R
+    400024: BackLowLeg.R_end
+    400026: BackMidLeg.L
+    400028: BackMidLeg.R
+    400030: BackUpLeg.L
+    400032: BackUpLeg.R
+    400034: BodyBottom
+    400036: BodyUp
+    400038: FrontIK.L
+    400040: FrontIK.L_end
+    400042: FrontIK.R
+    400044: FrontIK.R_end
+    400046: FrontKnee.L
+    400048: FrontKnee.L_end
+    400050: FrontKnee.R
+    400052: FrontKnee.R_end
+    400054: FrontLowLeg.L
+    400056: FrontLowLeg.L_end
+    400058: FrontLowLeg.R
+    400060: FrontLowLeg.R_end
+    400062: FrontMidLeg.L
+    400064: FrontMidLeg.R
+    400066: FrontUpLeg.L
+    400068: FrontUpLeg.R
+    400070: Head
+    400072: Head.001
+    400074: Head.001_end
+    400076: IK
+    400078: IK_end
+    400080: Mammoth
+    400082: //RootNode
+    400084: TrunkLow
+    400086: TrunkMid
+    400088: TrunkMidLow
+    400090: TrunkTip
+    400092: TrunkTip_end
+    400094: TrunkUp
+    400096: Whole
+    4300000: Mammoth
+    7400000: MammothScare
+    7400002: MammothChase
+    7400004: MammothIdle
+    7400006: Anim_Mammoth|MammothChase
+    7400008: Anim_Mammoth|MammothIdle
+    7400010: Anim_Mammoth|MammothScare
+    9500000: //RootNode
+    13700000: Mammoth
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: MammothScare
+      takeName: MammothScare
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anim_Mammoth
+        weight: 1
+      - path: Anim_Mammoth/BodyUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip/TrunkTip_end
+        weight: 1
+      - path: Anim_Mammoth/Whole
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L/BackIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R/BackIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L/BackKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R/BackKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L/BackLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R/BackLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L/FrontLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R/FrontLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L/FrontIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R/FrontIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L/FrontKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R/FrontKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001/Head.001_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK/IK_end
+        weight: 1
+      - path: Mammoth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MammothChase
+      takeName: MammothChase
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anim_Mammoth
+        weight: 1
+      - path: Anim_Mammoth/BodyUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip/TrunkTip_end
+        weight: 1
+      - path: Anim_Mammoth/Whole
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L/BackIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R/BackIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L/BackKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R/BackKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L/BackLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R/BackLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L/FrontLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R/FrontLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L/FrontIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R/FrontIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L/FrontKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R/FrontKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001/Head.001_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK/IK_end
+        weight: 1
+      - path: Mammoth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MammothIdle
+      takeName: MammothIdle
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Anim_Mammoth
+        weight: 1
+      - path: Anim_Mammoth/BodyUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip
+        weight: 1
+      - path: Anim_Mammoth/BodyUp/Head/TrunkUp/TrunkMid/TrunkMidLow/TrunkLow/TrunkTip/TrunkTip_end
+        weight: 1
+      - path: Anim_Mammoth/Whole
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.L/BackIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackIK.R/BackIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.L/BackKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BackKnee.R/BackKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.L/BackMidLeg.L/BackLowLeg.L/BackLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/BackUpLeg.R/BackMidLeg.R/BackLowLeg.R/BackLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.L/FrontMidLeg.L/FrontLowLeg.L/FrontLowLeg.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/BodyBottom/FrontUpLeg.R/FrontMidLeg.R/FrontLowLeg.R/FrontLowLeg.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.L/FrontIK.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontIK.R/FrontIK.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.L/FrontKnee.L_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R
+        weight: 1
+      - path: Anim_Mammoth/Whole/FrontKnee.R/FrontKnee.R_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001
+        weight: 1
+      - path: Anim_Mammoth/Whole/Head.001/Head.001_end
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK
+        weight: 1
+      - path: Anim_Mammoth/Whole/IK/IK_end
+        weight: 1
+      - path: Mammoth
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0015
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
