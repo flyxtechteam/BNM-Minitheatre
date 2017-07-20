@@ -3,7 +3,7 @@ guid: 2d1a3706c89c32a4282774fe5662947b
 timeCreated: 1496125012
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Anim|PrimFemGather
     100002: Arm.L
@@ -46,6 +46,7 @@ ModelImporter:
     100076: Stomach
     100078: Tight.L
     100080: Tight.R
+    100082: Anim_PrimFem
     400000: Anim|PrimFemGather
     400002: Arm.L
     400004: Arm.R
@@ -87,9 +88,13 @@ ModelImporter:
     400076: Stomach
     400078: Tight.L
     400080: Tight.R
+    400082: Anim_PrimFem
     4300000: PrimFemGather
     7400000: ArmatureAction
     7400002: Anim|PrimFemGather|PrimFemGather
+    7400004: PrimFemTreeGather
+    7400006: Anim_PrimFem|PrimFemSitGather
+    7400008: Anim_PrimFem|PrimFemTreeGather
     9500000: //RootNode
     13700000: PrimFemGather
   materials:
@@ -114,6 +119,7 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -121,7 +127,10 @@ ModelImporter:
     globalScale: 0.15
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -137,6 +146,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

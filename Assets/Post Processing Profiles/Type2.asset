@@ -55,19 +55,19 @@ MonoBehaviour:
       reflection:
         blendType: 0
         reflectionQuality: 2
-        maxDistance: 134
+        maxDistance: 143
         iterationCount: 295
         stepSize: 3
         widthModifier: 0.5
         reflectionBlur: 1
-        reflectBackfaces: 0
+        reflectBackfaces: 1
       intensity:
         reflectionMultiplier: 1
         fadeDistance: 100
         fresnelFade: 1
         fresnelFadePower: 1
       screenEdgeMask:
-        intensity: 0.03
+        intensity: 0.047
   depthOfField:
     m_Enabled: 1
     m_Settings:
@@ -79,11 +79,11 @@ MonoBehaviour:
   motionBlur:
     m_Enabled: 0
     m_Settings:
-      shutterAngle: 200
-      sampleCount: 10
+      shutterAngle: 308
+      sampleCount: 15
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       lowPercent: 63.227417
       highPercent: 99
