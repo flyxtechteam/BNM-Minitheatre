@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.319
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 52763475}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.319}
+  m_IndirectSpecularColor: {r: 0.32616597, g: 0.5108195, b: 0.36415848, a: 0.319}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ LightmapSettings:
     m_PVRFilteringAtrousColorSigma: 1
     m_PVRFilteringAtrousNormalSigma: 1
     m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: c0e4d0b4e8dc6a24c9961cdd36dc227b,
+  m_LightingDataAsset: {fileID: 112000002, guid: f949da90c1bff68458cb3af597ca1aa7,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -13971,6 +13971,7 @@ GameObject:
   - component: {fileID: 423160888}
   - component: {fileID: 423160890}
   - component: {fileID: 423160889}
+  - component: {fileID: 423160891}
   m_Layer: 5
   m_Name: FadeWhite
   m_TagString: Untagged
@@ -14029,6 +14030,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 423160887}
+--- !u!95 &423160891
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 423160887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2acf98dc96c57c54a807ec21b93881d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &423282134
 Prefab:
   m_ObjectHideFlags: 0
@@ -36772,6 +36790,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 658d45db170151a43b1b6a239c0ec1f1, type: 2}
+    - target: {fileID: 2300000, guid: f83d084e8f5f45047a0b4852b81e9c8c, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f83d084e8f5f45047a0b4852b81e9c8c, type: 3}
   m_IsPrefabParent: 0
@@ -41982,6 +42004,7 @@ GameObject:
   - component: {fileID: 1742564458}
   - component: {fileID: 1742564460}
   - component: {fileID: 1742564459}
+  - component: {fileID: 1742564461}
   m_Layer: 5
   m_Name: FadeBlack
   m_TagString: Untagged
@@ -42040,6 +42063,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1742564457}
+--- !u!95 &1742564461
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1742564457}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f29d56aef5ebbd343a83fb941997d668, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1743469404
 Prefab:
   m_ObjectHideFlags: 0
@@ -42464,6 +42504,12 @@ PlayableDirector:
     value: {fileID: 696837412}
   - key: {fileID: 114664859501130534, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
     value: {fileID: 737782553}
+  - key: {fileID: 0}
+    value: {fileID: 0}
+  - key: {fileID: 114809461940976400, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
+    value: {fileID: 423160887}
+  - key: {fileID: 0}
+    value: {fileID: 1771910075}
   m_ExposedReferences:
     m_References: []
 --- !u!82 &1771910082
@@ -42582,7 +42628,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 034c6435445422e4a8b5f6d93d57d3cf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f54b8572f1f0c4d42bbfc1a4195ecd08, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.17
   m_Pitch: 1
@@ -43210,6 +43256,10 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 658d45db170151a43b1b6a239c0ec1f1, type: 2}
     - target: {fileID: 400000, guid: 1d24a096a8c05db4f8cf467d2a3874d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 1d24a096a8c05db4f8cf467d2a3874d3, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
