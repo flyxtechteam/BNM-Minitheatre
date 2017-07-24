@@ -95,6 +95,8 @@ ModelImporter:
     7400004: PrimFemTreeGather
     7400006: Anim_PrimFem|PrimFemSitGather
     7400008: Anim_PrimFem|PrimFemTreeGather
+    7400010: PrimFemClap
+    7400012: Anim_PrimFem|PrimFemClap
     9500000: //RootNode
     13700000: PrimFemGather
   materials:

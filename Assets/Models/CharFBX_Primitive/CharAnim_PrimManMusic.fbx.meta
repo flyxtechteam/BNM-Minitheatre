@@ -49,6 +49,7 @@ ModelImporter:
     100082: Stomach
     100084: Tight.L
     100086: Tight.R
+    100088: Didgeridoo
     400000: Anim_PrimMan
     400002: Arm.L
     400004: Arm.R
@@ -93,16 +94,20 @@ ModelImporter:
     400082: Stomach
     400084: Tight.L
     400086: Tight.R
+    400088: Didgeridoo
     2300000: BoulderSmall
     2300002: Cylinder
     2300004: Plane
+    2300006: Didgeridoo
     3300000: BoulderSmall
     3300002: Cylinder
     3300004: Plane
+    3300006: Didgeridoo
     4300000: Plane
     4300002: Cylinder
     4300004: PrimManSit
     4300006: BoulderSmall
+    4300008: Didgeridoo
     7400000: PrimManSit
     7400002: PrimManMusic
     7400004: Anim_PrimMan|PrimManMusic
@@ -135,7 +140,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
