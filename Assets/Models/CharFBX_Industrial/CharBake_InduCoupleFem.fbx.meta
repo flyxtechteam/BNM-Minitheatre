@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: a0ff8bcba82ac63498cf4937ec7e8213
-timeCreated: 1501127790
+guid: b9077f7e639b8ef4583a32bc82aa393b
+timeCreated: 1501573759
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -96,10 +96,16 @@ ModelImporter:
     7400000: WomanGossip
     7400002: WorkerWomanWork
     7400004: WomanTalk.001
-    7400006: Anim|WorkerWoman|WomanGossip
-    7400008: Anim|WorkerWoman|WomanTalk
-    7400010: Anim|WorkerWoman|WomanWalk
-    7400012: Anim|WorkerWoman|WorkerWomanWork
+    7400006: Anim|WorkerWoman|ManCouple
+    7400008: Anim|WorkerWoman|WomanCouple
+    7400010: Anim|WorkerWoman|WomanGossip
+    7400012: Anim|WorkerWoman|WomanTalk
+    7400014: Anim|WorkerWoman|WomanWalk
+    7400016: Anim|WorkerWoman|WorkerManBasicCrouch
+    7400018: Anim|WorkerWoman|WorkerManBasicStand
+    7400020: Anim|WorkerWoman|WorkerManLeader
+    7400022: Anim|WorkerWoman|WorkerManWalk
+    7400024: Anim|WorkerWoman|WorkerWomanWork
     9500000: //RootNode
     13700000: WorkerWoman
   materials:
@@ -127,17 +133,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanGossip
-      takeName: Anim|WorkerWoman|WomanGossip
+      name: Anim|WorkerWoman|ManCouple
+      takeName: Anim|WorkerWoman|ManCouple
       firstFrame: 0
-      lastFrame: 140
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -155,73 +161,17 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanTalk
-      takeName: Anim|WorkerWoman|WomanTalk
+      name: Anim|WorkerWoman|WomanCouple
+      takeName: Anim|WorkerWoman|WomanCouple
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanWalk
-      takeName: Anim|WorkerWoman|WomanWalk
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim|WorkerWoman|WorkerWomanWork
-      takeName: Anim|WorkerWoman|WorkerWomanWork
-      firstFrame: 0
-      lastFrame: 80
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -251,7 +201,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 0
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
