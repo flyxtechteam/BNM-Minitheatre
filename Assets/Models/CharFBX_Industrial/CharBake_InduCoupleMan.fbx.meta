@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: a0ff8bcba82ac63498cf4937ec7e8213
-timeCreated: 1501127790
+guid: 05ac31a0fc38e1d41829c078313f8037
+timeCreated: 1501573758
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Anim|WorkerWoman
+    100000: Anim|WorkerBasic
     100002: Arm.L
     100004: Arm.R
     100006: Bone
@@ -45,9 +45,9 @@ ModelImporter:
     100074: Stomach
     100076: Tight.L
     100078: Tight.R
-    100080: WorkerWoman
-    100082: WorkerWomanHat
-    400000: Anim|WorkerWoman
+    100080: WorkerBasic
+    100082: WorkerHat
+    400000: Anim|WorkerBasic
     400002: Arm.L
     400004: Arm.R
     400006: Bone
@@ -87,21 +87,26 @@ ModelImporter:
     400074: Stomach
     400076: Tight.L
     400078: Tight.R
-    400080: WorkerWoman
-    400082: WorkerWomanHat
-    2300000: WorkerWomanHat
-    3300000: WorkerWomanHat
-    4300000: WorkerWomanHat
-    4300002: WorkerWoman
-    7400000: WomanGossip
-    7400002: WorkerWomanWork
-    7400004: WomanTalk.001
-    7400006: Anim|WorkerWoman|WomanGossip
-    7400008: Anim|WorkerWoman|WomanTalk
-    7400010: Anim|WorkerWoman|WomanWalk
-    7400012: Anim|WorkerWoman|WorkerWomanWork
+    400080: WorkerBasic
+    400082: WorkerHat
+    2300000: WorkerHat
+    3300000: WorkerHat
+    4300000: WorkerHat
+    4300002: WorkerBasic
+    7400000: WorkerManLeader
+    7400002: WorkerManWalk
+    7400004: Anim|WorkerBasic|ManCouple
+    7400006: Anim|WorkerBasic|WomanCouple
+    7400008: Anim|WorkerBasic|WomanGossip
+    7400010: Anim|WorkerBasic|WomanTalk
+    7400012: Anim|WorkerBasic|WomanWalk
+    7400014: Anim|WorkerBasic|WorkerManBasicCrouch
+    7400016: Anim|WorkerBasic|WorkerManBasicStand
+    7400018: Anim|WorkerBasic|WorkerManLeader
+    7400020: Anim|WorkerBasic|WorkerManWalk
+    7400022: Anim|WorkerBasic|WorkerWomanWork
     9500000: //RootNode
-    13700000: WorkerWoman
+    13700000: WorkerBasic
   materials:
     importMaterials: 1
     materialName: 0
@@ -127,17 +132,17 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanGossip
-      takeName: Anim|WorkerWoman|WomanGossip
+      name: Anim|WorkerBasic|ManCouple
+      takeName: Anim|WorkerBasic|ManCouple
       firstFrame: 0
-      lastFrame: 140
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -155,73 +160,17 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanTalk
-      takeName: Anim|WorkerWoman|WomanTalk
+      name: Anim|WorkerBasic|WomanCouple
+      takeName: Anim|WorkerBasic|WomanCouple
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanWalk
-      takeName: Anim|WorkerWoman|WomanWalk
-      firstFrame: 0
-      lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim|WorkerWoman|WorkerWomanWork
-      takeName: Anim|WorkerWoman|WorkerWomanWork
-      firstFrame: 0
-      lastFrame: 80
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -251,7 +200,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 0
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
