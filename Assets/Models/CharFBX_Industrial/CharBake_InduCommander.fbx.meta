@@ -1,104 +1,108 @@
 fileFormatVersion: 2
-guid: 2d1a3706c89c32a4282774fe5662947b
-timeCreated: 1496125012
+guid: 90bbc49c75bb2224eb2665740deebcea
+timeCreated: 1501658870
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Anim|PrimFemGather
+    100000: Anim_InduSoldier
     100002: Arm.L
     100004: Arm.R
     100006: Bone
-    100008: //RootNode
-    100010: Chest
-    100012: Elbow.L
-    100014: Elbow.L_end
-    100016: Elbow.R
-    100018: Elbow.R_end
-    100020: Feet.L
-    100022: Feet.L_end
-    100024: Feet.R
-    100026: Feet.R_end
-    100028: Hand.L
-    100030: Hand.L_end
-    100032: Hand.R
-    100034: Hand.R_end
-    100036: Head
-    100038: Head_end
-    100040: IKFeet.L
-    100042: IKFeet.R
-    100044: IKHand.L
-    100046: IKHand.L_end
-    100048: IKHand.R
-    100050: IKHand.R_end
-    100052: Knee.L
-    100054: Knee.L_end
-    100056: Knee.R
-    100058: Knee.R_end
-    100060: Leg.L
-    100062: Leg.L_end
-    100064: Leg.R
-    100066: Leg.R_end
-    100068: Neck
-    100070: PrimFemGather
-    100072: Shoulder.L
-    100074: Shoulder.R
-    100076: Stomach
-    100078: Tight.L
-    100080: Tight.R
-    100082: Anim_PrimFem
-    400000: Anim|PrimFemGather
+    100008: CaptainHat
+    100010: CaptSword
+    100012: //RootNode
+    100014: Chest
+    100016: Elbow.L
+    100018: Elbow.L_end
+    100020: Elbow.R
+    100022: Elbow.R_end
+    100024: Feet.L
+    100026: Feet.L_end
+    100028: Feet.R
+    100030: Feet.R_end
+    100032: Hand.L
+    100034: Hand.L_end
+    100036: Hand.R
+    100038: Hand.R_end
+    100040: Head
+    100042: Head_end
+    100044: IKFeet.L
+    100046: IKFeet.R
+    100048: IKHand.L
+    100050: IKHand.L_end
+    100052: IKHand.R
+    100054: IKHand.R_end
+    100056: InduCaptain
+    100058: Knee.L
+    100060: Knee.L_end
+    100062: Knee.R
+    100064: Knee.R_end
+    100066: Leg.L
+    100068: Leg.L_end
+    100070: Leg.R
+    100072: Leg.R_end
+    100074: Neck
+    100076: Shoulder.L
+    100078: Shoulder.R
+    100080: Stomach
+    100082: Tight.L
+    100084: Tight.R
+    400000: Anim_InduSoldier
     400002: Arm.L
     400004: Arm.R
     400006: Bone
-    400008: //RootNode
-    400010: Chest
-    400012: Elbow.L
-    400014: Elbow.L_end
-    400016: Elbow.R
-    400018: Elbow.R_end
-    400020: Feet.L
-    400022: Feet.L_end
-    400024: Feet.R
-    400026: Feet.R_end
-    400028: Hand.L
-    400030: Hand.L_end
-    400032: Hand.R
-    400034: Hand.R_end
-    400036: Head
-    400038: Head_end
-    400040: IKFeet.L
-    400042: IKFeet.R
-    400044: IKHand.L
-    400046: IKHand.L_end
-    400048: IKHand.R
-    400050: IKHand.R_end
-    400052: Knee.L
-    400054: Knee.L_end
-    400056: Knee.R
-    400058: Knee.R_end
-    400060: Leg.L
-    400062: Leg.L_end
-    400064: Leg.R
-    400066: Leg.R_end
-    400068: Neck
-    400070: PrimFemGather
-    400072: Shoulder.L
-    400074: Shoulder.R
-    400076: Stomach
-    400078: Tight.L
-    400080: Tight.R
-    400082: Anim_PrimFem
-    4300000: PrimFemGather
-    7400000: ArmatureAction
-    7400002: Anim|PrimFemGather|PrimFemGather
-    7400004: PrimFemTreeGather
-    7400006: Anim_PrimFem|PrimFemSitGather
-    7400008: Anim_PrimFem|PrimFemTreeGather
-    7400010: PrimFemClap
-    7400012: Anim_PrimFem|PrimFemClap
+    400008: CaptainHat
+    400010: CaptSword
+    400012: //RootNode
+    400014: Chest
+    400016: Elbow.L
+    400018: Elbow.L_end
+    400020: Elbow.R
+    400022: Elbow.R_end
+    400024: Feet.L
+    400026: Feet.L_end
+    400028: Feet.R
+    400030: Feet.R_end
+    400032: Hand.L
+    400034: Hand.L_end
+    400036: Hand.R
+    400038: Hand.R_end
+    400040: Head
+    400042: Head_end
+    400044: IKFeet.L
+    400046: IKFeet.R
+    400048: IKHand.L
+    400050: IKHand.L_end
+    400052: IKHand.R
+    400054: IKHand.R_end
+    400056: InduCaptain
+    400058: Knee.L
+    400060: Knee.L_end
+    400062: Knee.R
+    400064: Knee.R_end
+    400066: Leg.L
+    400068: Leg.L_end
+    400070: Leg.R
+    400072: Leg.R_end
+    400074: Neck
+    400076: Shoulder.L
+    400078: Shoulder.R
+    400080: Stomach
+    400082: Tight.L
+    400084: Tight.R
+    2300000: CaptainHat
+    2300002: CaptSword
+    3300000: CaptainHat
+    3300002: CaptSword
+    4300000: CaptainHat
+    4300002: CaptSword
+    4300004: InduCaptain
+    7400000: Anim_InduSoldier|CaptStand
+    7400002: Anim_InduSoldier|CaptStop
+    7400004: Anim_InduSoldier|CaptWalk
     9500000: //RootNode
-    13700000: PrimFemGather
+    13700000: InduCaptain
   materials:
     importMaterials: 1
     materialName: 0
@@ -124,10 +128,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: PrimFemTreeGather
-      takeName: PrimFemTreeGather
+      name: Anim_InduSoldier|CaptStand
+      takeName: Anim_InduSoldier|CaptStand
       firstFrame: 0
-      lastFrame: 160
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -152,8 +156,8 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: PrimFemClap
-      takeName: PrimFemClap
+      name: Anim_InduSoldier|CaptStop
+      takeName: Anim_InduSoldier|CaptStop
       firstFrame: 0
       lastFrame: 60
       wrapMode: 0
@@ -180,66 +184,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemClap
-      takeName: Anim_PrimFem|PrimFemClap
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemSitGather
-      takeName: Anim_PrimFem|PrimFemSitGather
+      name: Anim_InduSoldier|CaptWalk
+      takeName: Anim_InduSoldier|CaptWalk
       firstFrame: 0
       lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemTreeGather
-      takeName: Anim_PrimFem|PrimFemTreeGather
-      firstFrame: 0
-      lastFrame: 160
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -266,13 +214,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.15
+    globalScale: 0.35
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -288,7 +236,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
