@@ -1,107 +1,109 @@
 fileFormatVersion: 2
-guid: a0ff8bcba82ac63498cf4937ec7e8213
-timeCreated: 1501127790
+guid: 24dfc33eff40f06419026d60c86a49c7
+timeCreated: 1501658876
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Anim|WorkerWoman
+    100000: Anim_InduSoldier
     100002: Arm.L
     100004: Arm.R
     100006: Bone
     100008: //RootNode
     100010: Chest
-    100012: Elbow.L
-    100014: Elbow.L_end
-    100016: Elbow.R
-    100018: Elbow.R_end
-    100020: Feet.L
-    100022: Feet.L_end
-    100024: Feet.R
-    100026: Feet.R_end
-    100028: Hand.L
-    100030: Hand.L_end
-    100032: Hand.R
-    100034: Hand.R_end
-    100036: Head
-    100038: Head_end
-    100040: IKFeet.L
-    100042: IKFeet.R
-    100044: IKHand.L
-    100046: IKHand.L_end
-    100048: IKHand.R
-    100050: IKHand.R_end
-    100052: Knee.L
-    100054: Knee.L_end
-    100056: Knee.R
-    100058: Knee.R_end
-    100060: Leg.L
-    100062: Leg.L_end
-    100064: Leg.R
-    100066: Leg.R_end
-    100068: Neck
-    100070: Shoulder.L
-    100072: Shoulder.R
-    100074: Stomach
-    100076: Tight.L
-    100078: Tight.R
-    100080: WorkerWoman
-    100082: WorkerWomanHat
-    400000: Anim|WorkerWoman
+    100012: Cube
+    100014: Elbow.L
+    100016: Elbow.L_end
+    100018: Elbow.R
+    100020: Elbow.R_end
+    100022: Feet.L
+    100024: Feet.L_end
+    100026: Feet.R
+    100028: Feet.R_end
+    100030: Hand.L
+    100032: Hand.L_end
+    100034: Hand.R
+    100036: Hand.R_end
+    100038: Head
+    100040: Head_end
+    100042: IKFeet.L
+    100044: IKFeet.R
+    100046: IKHand.L
+    100048: IKHand.L_end
+    100050: IKHand.R
+    100052: IKHand.R_end
+    100054: InduSoldier
+    100056: Knee.L
+    100058: Knee.L_end
+    100060: Knee.R
+    100062: Knee.R_end
+    100064: Leg.L
+    100066: Leg.L_end
+    100068: Leg.R
+    100070: Leg.R_end
+    100072: Neck
+    100074: Shoulder.L
+    100076: Shoulder.R
+    100078: Sphere
+    100080: Stomach
+    100082: Tight.L
+    100084: Tight.R
+    400000: Anim_InduSoldier
     400002: Arm.L
     400004: Arm.R
     400006: Bone
     400008: //RootNode
     400010: Chest
-    400012: Elbow.L
-    400014: Elbow.L_end
-    400016: Elbow.R
-    400018: Elbow.R_end
-    400020: Feet.L
-    400022: Feet.L_end
-    400024: Feet.R
-    400026: Feet.R_end
-    400028: Hand.L
-    400030: Hand.L_end
-    400032: Hand.R
-    400034: Hand.R_end
-    400036: Head
-    400038: Head_end
-    400040: IKFeet.L
-    400042: IKFeet.R
-    400044: IKHand.L
-    400046: IKHand.L_end
-    400048: IKHand.R
-    400050: IKHand.R_end
-    400052: Knee.L
-    400054: Knee.L_end
-    400056: Knee.R
-    400058: Knee.R_end
-    400060: Leg.L
-    400062: Leg.L_end
-    400064: Leg.R
-    400066: Leg.R_end
-    400068: Neck
-    400070: Shoulder.L
-    400072: Shoulder.R
-    400074: Stomach
-    400076: Tight.L
-    400078: Tight.R
-    400080: WorkerWoman
-    400082: WorkerWomanHat
-    2300000: WorkerWomanHat
-    3300000: WorkerWomanHat
-    4300000: WorkerWomanHat
-    4300002: WorkerWoman
-    7400000: WomanGossip
-    7400002: WorkerWomanWork
-    7400004: WomanTalk.001
-    7400006: Anim|WorkerWoman|WomanGossip
-    7400008: Anim|WorkerWoman|WomanTalk
-    7400010: Anim|WorkerWoman|WomanWalk
-    7400012: Anim|WorkerWoman|WorkerWomanWork
+    400012: Cube
+    400014: Elbow.L
+    400016: Elbow.L_end
+    400018: Elbow.R
+    400020: Elbow.R_end
+    400022: Feet.L
+    400024: Feet.L_end
+    400026: Feet.R
+    400028: Feet.R_end
+    400030: Hand.L
+    400032: Hand.L_end
+    400034: Hand.R
+    400036: Hand.R_end
+    400038: Head
+    400040: Head_end
+    400042: IKFeet.L
+    400044: IKFeet.R
+    400046: IKHand.L
+    400048: IKHand.L_end
+    400050: IKHand.R
+    400052: IKHand.R_end
+    400054: InduSoldier
+    400056: Knee.L
+    400058: Knee.L_end
+    400060: Knee.R
+    400062: Knee.R_end
+    400064: Leg.L
+    400066: Leg.L_end
+    400068: Leg.R
+    400070: Leg.R_end
+    400072: Neck
+    400074: Shoulder.L
+    400076: Shoulder.R
+    400078: Sphere
+    400080: Stomach
+    400082: Tight.L
+    400084: Tight.R
+    2300000: Cube
+    2300002: Sphere
+    3300000: Cube
+    3300002: Sphere
+    4300000: Sphere
+    4300002: Cube
+    4300004: InduSoldier
+    7400000: ArmyStop
+    7400002: Anim_InduSoldier|ArmyStand
+    7400004: Anim_InduSoldier|ArmyStop
+    7400006: Anim_InduSoldier|ArmyWalk
     9500000: //RootNode
-    13700000: WorkerWoman
+    13700000: InduSoldier
   materials:
     importMaterials: 1
     materialName: 0
@@ -127,10 +129,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanGossip
-      takeName: Anim|WorkerWoman|WomanGossip
+      name: Anim_InduSoldier|ArmyStand
+      takeName: Anim_InduSoldier|ArmyStand
       firstFrame: 0
-      lastFrame: 140
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -155,10 +157,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanTalk
-      takeName: Anim|WorkerWoman|WomanTalk
+      name: Anim_InduSoldier|ArmyStop
+      takeName: Anim_InduSoldier|ArmyStop
       firstFrame: 0
-      lastFrame: 150
+      lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -183,38 +185,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim|WorkerWoman|WomanWalk
-      takeName: Anim|WorkerWoman|WomanWalk
+      name: Anim_InduSoldier|ArmyWalk
+      takeName: Anim_InduSoldier|ArmyWalk
       firstFrame: 0
       lastFrame: 40
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim|WorkerWoman|WorkerWomanWork
-      takeName: Anim|WorkerWoman|WorkerWomanWork
-      firstFrame: 0
-      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -241,7 +215,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.24
+    globalScale: 0.35
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -251,7 +225,7 @@ ModelImporter:
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 0
+    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
