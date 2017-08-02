@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 2d1a3706c89c32a4282774fe5662947b
-timeCreated: 1496125012
+guid: b9077f7e639b8ef4583a32bc82aa393b
+timeCreated: 1501573759
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: Anim|PrimFemGather
+    100000: Anim|WorkerWoman
     100002: Arm.L
     100004: Arm.R
     100006: Bone
@@ -40,14 +40,14 @@ ModelImporter:
     100064: Leg.R
     100066: Leg.R_end
     100068: Neck
-    100070: PrimFemGather
-    100072: Shoulder.L
-    100074: Shoulder.R
-    100076: Stomach
-    100078: Tight.L
-    100080: Tight.R
-    100082: Anim_PrimFem
-    400000: Anim|PrimFemGather
+    100070: Shoulder.L
+    100072: Shoulder.R
+    100074: Stomach
+    100076: Tight.L
+    100078: Tight.R
+    100080: WorkerWoman
+    100082: WorkerWomanHat
+    400000: Anim|WorkerWoman
     400002: Arm.L
     400004: Arm.R
     400006: Bone
@@ -82,23 +82,32 @@ ModelImporter:
     400064: Leg.R
     400066: Leg.R_end
     400068: Neck
-    400070: PrimFemGather
-    400072: Shoulder.L
-    400074: Shoulder.R
-    400076: Stomach
-    400078: Tight.L
-    400080: Tight.R
-    400082: Anim_PrimFem
-    4300000: PrimFemGather
-    7400000: ArmatureAction
-    7400002: Anim|PrimFemGather|PrimFemGather
-    7400004: PrimFemTreeGather
-    7400006: Anim_PrimFem|PrimFemSitGather
-    7400008: Anim_PrimFem|PrimFemTreeGather
-    7400010: PrimFemClap
-    7400012: Anim_PrimFem|PrimFemClap
+    400070: Shoulder.L
+    400072: Shoulder.R
+    400074: Stomach
+    400076: Tight.L
+    400078: Tight.R
+    400080: WorkerWoman
+    400082: WorkerWomanHat
+    2300000: WorkerWomanHat
+    3300000: WorkerWomanHat
+    4300000: WorkerWomanHat
+    4300002: WorkerWoman
+    7400000: WomanGossip
+    7400002: WorkerWomanWork
+    7400004: WomanTalk.001
+    7400006: Anim|WorkerWoman|ManCouple
+    7400008: Anim|WorkerWoman|WomanCouple
+    7400010: Anim|WorkerWoman|WomanGossip
+    7400012: Anim|WorkerWoman|WomanTalk
+    7400014: Anim|WorkerWoman|WomanWalk
+    7400016: Anim|WorkerWoman|WorkerManBasicCrouch
+    7400018: Anim|WorkerWoman|WorkerManBasicStand
+    7400020: Anim|WorkerWoman|WorkerManLeader
+    7400022: Anim|WorkerWoman|WorkerManWalk
+    7400024: Anim|WorkerWoman|WorkerWomanWork
     9500000: //RootNode
-    13700000: PrimFemGather
+    13700000: WorkerWoman
   materials:
     importMaterials: 1
     materialName: 0
@@ -124,66 +133,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: PrimFemTreeGather
-      takeName: PrimFemTreeGather
+      name: Anim|WorkerWoman|ManCouple
+      takeName: Anim|WorkerWoman|ManCouple
       firstFrame: 0
-      lastFrame: 160
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: PrimFemClap
-      takeName: PrimFemClap
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemClap
-      takeName: Anim_PrimFem|PrimFemClap
-      firstFrame: 0
-      lastFrame: 60
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -208,45 +161,17 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemSitGather
-      takeName: Anim_PrimFem|PrimFemSitGather
+      name: Anim|WorkerWoman|WomanCouple
+      takeName: Anim|WorkerWoman|WomanCouple
       firstFrame: 0
-      lastFrame: 40
+      lastFrame: 350
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Anim_PrimFem|PrimFemTreeGather
-      takeName: Anim_PrimFem|PrimFemTreeGather
-      firstFrame: 0
-      lastFrame: 160
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -266,13 +191,13 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.15
+    globalScale: 0.35
     meshCompression: 0
     addColliders: 0
-    importVisibility: 0
+    importVisibility: 1
     importBlendShapes: 1
-    importCameras: 0
-    importLights: 0
+    importCameras: 1
+    importLights: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -288,7 +213,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-    normalCalculationMode: 0
+    normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
