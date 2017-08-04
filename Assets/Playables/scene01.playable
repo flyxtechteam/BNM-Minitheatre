@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: scene01
   m_EditorClassIdentifier: 
   m_Id: 0
-  m_NextId: 39
+  m_NextId: 41
   m_Tracks:
   - {fileID: 114427977479867180}
   - {fileID: 114853712692435714}
@@ -40,6 +40,7 @@ MonoBehaviour:
   - {fileID: 114587103175735018}
   - {fileID: 114121132792271034}
   - {fileID: 114794275589087042}
+  - {fileID: 114776154417006416}
   m_FixedDuration: 0
   m_EditorSettings:
     fps: 60
@@ -8769,6 +8770,92 @@ MonoBehaviour:
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_UseTrackMatchFields: 0
   m_MatchTargetFields: 63
+--- !u!114 &114776154417006416
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2113462093, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: Audio Track3
+  m_EditorClassIdentifier: 
+  m_Locked: 0
+  m_Muted: 0
+  m_Soloed: 0
+  m_Height: 0
+  m_InlineAnimationCurveHeight: 100
+  m_CustomPlayableFullTypename: 
+  m_AnimClip: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Start: 43.628958197810405
+    m_ClipIn: 10.066666666666666
+    m_Asset: {fileID: 114974879599335164}
+    m_UnderlyingAsset: {fileID: 8300000, guid: e24b23c56244e433da0c70078e299030, type: 3}
+    m_Duration: 15.921040185292577
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114776154417006416}
+    m_EaseInDuration: 2.99
+    m_EaseOutDuration: 4.61
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 2
+        outSlope: 2
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 0
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639732700
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Didgeridoo
 --- !u!114 &114780434155460322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8781,6 +8868,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 8300000, guid: 0bec3ff1119004c53a37b5d1b58fb263, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+--- !u!114 &114784188021031392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: 810f091086bbf44c0b96dda5bc3d4ceb, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
 --- !u!114 &114789545372462116
@@ -8892,11 +8993,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 4
-  - m_Start: 33.61585034013605
-    m_ClipIn: 0
-    m_Asset: {fileID: 114963622406290812}
-    m_UnderlyingAsset: {fileID: 8300000, guid: b60704d77d7c74ab4a0cccd7ebb5aef9, type: 3}
-    m_Duration: 0.7833333333333333
+  - m_Start: 33.016666666666666
+    m_ClipIn: 0.05
+    m_Asset: {fileID: 114784188021031392}
+    m_UnderlyingAsset: {fileID: 8300000, guid: 810f091086bbf44c0b96dda5bc3d4ceb, type: 3}
+    m_Duration: 0.4666666666666667
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -8909,7 +9010,72 @@ MonoBehaviour:
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
     m_BlendInDuration: -1
-    m_BlendOutDuration: 0.002456683723288222
+    m_BlendOutDuration: -1
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 2
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_ID: -1639732697
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Footstep 2
+  - m_Start: 33.61585034013605
+    m_ClipIn: 0
+    m_Asset: {fileID: 114963622406290812}
+    m_UnderlyingAsset: {fileID: 8300000, guid: b60704d77d7c74ab4a0cccd7ebb5aef9, type: 3}
+    m_Duration: 0.6724932352701813
+    m_ParentID: 0
+    m_TimeScale: 1
+    m_BlendCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ParentTrack: {fileID: 114794275589087042}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -8961,7 +9127,7 @@ MonoBehaviour:
     m_ClipIn: 0
     m_Asset: {fileID: 114574106191097438}
     m_UnderlyingAsset: {fileID: 8300000, guid: 810f091086bbf44c0b96dda5bc3d4ceb, type: 3}
-    m_Duration: 0.8166666666666667
+    m_Duration: 0.6929555499364426
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -8973,8 +9139,8 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114794275589087042}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.002456683723288222
-    m_BlendOutDuration: 0.003300984700523202
+    m_BlendInDuration: -1
+    m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
       m_Curve:
@@ -9022,11 +9188,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 2
-  - m_Start: 35.21009267171224
+  - m_Start: 35.089682539682535
     m_ClipIn: 0
     m_Asset: {fileID: 114471691988422974}
     m_UnderlyingAsset: {fileID: 8300000, guid: 2f8e74bb93ed8480aa92a0d2d7d6c2f6, type: 3}
-    m_Duration: 0.7333333333333333
+    m_Duration: 0.7
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -9038,7 +9204,7 @@ MonoBehaviour:
     m_ParentTrack: {fileID: 114794275589087042}
     m_EaseInDuration: 0
     m_EaseOutDuration: 0
-    m_BlendInDuration: 0.003300984700523202
+    m_BlendInDuration: -1
     m_BlendOutDuration: -1
     m_MixInCurve:
       serializedVersion: 2
@@ -9075,11 +9241,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 3
-  - m_Start: 36.06109059651693
-    m_ClipIn: 0
+  - m_Start: 36.016666666666666
+    m_ClipIn: 0.03333333333333333
     m_Asset: {fileID: 114090586985011888}
     m_UnderlyingAsset: {fileID: 8300000, guid: 0bec3ff1119004c53a37b5d1b58fb263, type: 3}
-    m_Duration: 0.891925557454428
+    m_Duration: 0.6833333333333333
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -9128,7 +9294,7 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 4
-  - m_Start: 37.03333333333333
+  - m_Start: 36.916666666666664
     m_ClipIn: 0
     m_Asset: {fileID: 114620140002884634}
     m_UnderlyingAsset: {fileID: 8300000, guid: b60704d77d7c74ab4a0cccd7ebb5aef9, type: 3}
@@ -9193,11 +9359,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 1
-  - m_Start: 37.8
+  - m_Start: 37.72473922902495
     m_ClipIn: 0
     m_Asset: {fileID: 114482604211639708}
     m_UnderlyingAsset: {fileID: 8300000, guid: 810f091086bbf44c0b96dda5bc3d4ceb, type: 3}
-    m_Duration: 0.8
+    m_Duration: 0.65
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -9258,11 +9424,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 2
-  - m_Start: 38.688916015625
+  - m_Start: 38.55
     m_ClipIn: 0
     m_Asset: {fileID: 114046573113444466}
     m_UnderlyingAsset: {fileID: 8300000, guid: 2f8e74bb93ed8480aa92a0d2d7d6c2f6, type: 3}
-    m_Duration: 1.2166666666666666
+    m_Duration: 0.5833333333333334
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -9323,11 +9489,11 @@ MonoBehaviour:
     m_PostExtrapolationTime: 0
     m_PreExtrapolationTime: 0
     m_DisplayName: Footstep 3
-  - m_Start: 40.016666666666666
+  - m_Start: 39.308967336018874
     m_ClipIn: 0
     m_Asset: {fileID: 114045669178788756}
     m_UnderlyingAsset: {fileID: 8300000, guid: b60704d77d7c74ab4a0cccd7ebb5aef9, type: 3}
-    m_Duration: 0.7
+    m_Duration: 0.48333333333333334
     m_ParentID: 0
     m_TimeScale: 1
     m_BlendCurve:
@@ -9816,6 +9982,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Clip: {fileID: 8300000, guid: 368a8c59eb46b4ff6bff7c82241567b4, type: 3}
+  m_Loop: 0
+  m_bufferingTime: 0.1
+--- !u!114 &114974879599335164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1977359656, guid: 6a10b2909283487f913b00d94cd3faf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Clip: {fileID: 8300000, guid: e24b23c56244e433da0c70078e299030, type: 3}
   m_Loop: 0
   m_bufferingTime: 0.1
 --- !u!114 &114979419138173736
