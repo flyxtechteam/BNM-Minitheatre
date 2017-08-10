@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: 4d187f4575885c94aa85795fb982ab86
+timeCreated: 1502262824
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Anim_MedGuard
+    100002: Arm.L
+    100004: Arm.R
+    100006: Bone
+    100008: //RootNode
+    100010: Chest
+    100012: Elbow.L
+    100014: Elbow.L_end
+    100016: Elbow.R
+    100018: Elbow.R_end
+    100020: Feet.L
+    100022: Feet.L_end
+    100024: Feet.R
+    100026: Feet.R_end
+    100028: Hand.L
+    100030: Hand.L_end
+    100032: Hand.R
+    100034: Hand.R_end
+    100036: Head
+    100038: Head_end
+    100040: Helmet
+    100042: IKFeet.L
+    100044: IKFeet.R
+    100046: IKHand.L
+    100048: IKHand.L_end
+    100050: IKHand.R
+    100052: IKHand.R_end
+    100054: Knee.L
+    100056: Knee.L_end
+    100058: Knee.R
+    100060: Knee.R_end
+    100062: Leg.L
+    100064: Leg.L_end
+    100066: Leg.R
+    100068: Leg.R_end
+    100070: MedGuard
+    100072: Neck
+    100074: Shield
+    100076: Shoulder.L
+    100078: Shoulder.R
+    100080: Spear
+    100082: Stomach
+    100084: Tight.L
+    100086: Tight.R
+    400000: Anim_MedGuard
+    400002: Arm.L
+    400004: Arm.R
+    400006: Bone
+    400008: //RootNode
+    400010: Chest
+    400012: Elbow.L
+    400014: Elbow.L_end
+    400016: Elbow.R
+    400018: Elbow.R_end
+    400020: Feet.L
+    400022: Feet.L_end
+    400024: Feet.R
+    400026: Feet.R_end
+    400028: Hand.L
+    400030: Hand.L_end
+    400032: Hand.R
+    400034: Hand.R_end
+    400036: Head
+    400038: Head_end
+    400040: Helmet
+    400042: IKFeet.L
+    400044: IKFeet.R
+    400046: IKHand.L
+    400048: IKHand.L_end
+    400050: IKHand.R
+    400052: IKHand.R_end
+    400054: Knee.L
+    400056: Knee.L_end
+    400058: Knee.R
+    400060: Knee.R_end
+    400062: Leg.L
+    400064: Leg.L_end
+    400066: Leg.R
+    400068: Leg.R_end
+    400070: MedGuard
+    400072: Neck
+    400074: Shield
+    400076: Shoulder.L
+    400078: Shoulder.R
+    400080: Spear
+    400082: Stomach
+    400084: Tight.L
+    400086: Tight.R
+    2300000: Helmet
+    2300002: Shield
+    2300004: Spear
+    3300000: Helmet
+    3300002: Shield
+    3300004: Spear
+    4300000: Helmet
+    4300002: Spear
+    4300004: Shield
+    4300006: MedGuard
+    7400000: MedGuardStand01
+    7400002: MedGuardStand02
+    7400004: MedGuardWalk
+    7400006: Anim_MedGuard|MedGuardStand01
+    7400008: Anim_MedGuard|MedGuardStand02
+    7400010: Anim_MedGuard|MedGuardWalk
+    7400012: Anim_MedGuard|MedGuardWalkDef
+    9500000: //RootNode
+    13700000: MedGuard
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: MedGuardStand01
+      takeName: MedGuardStand01
+      firstFrame: 0
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MedGuardStand02
+      takeName: MedGuardStand02
+      firstFrame: 0
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: MedGuardWalk
+      takeName: MedGuardWalk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_MedGuard|MedGuardStand01
+      takeName: Anim_MedGuard|MedGuardStand01
+      firstFrame: 0
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_MedGuard|MedGuardStand02
+      takeName: Anim_MedGuard|MedGuardStand02
+      firstFrame: 0
+      lastFrame: 235
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_MedGuard|MedGuardWalk
+      takeName: Anim_MedGuard|MedGuardWalk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_MedGuard|MedGuardWalkDef
+      takeName: Anim_MedGuard|MedGuardWalkDef
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.27
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
