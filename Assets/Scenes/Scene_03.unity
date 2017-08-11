@@ -1772,6 +1772,86 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: eb8641ea22952f84297db71dbc2dbb4c, type: 3}
   m_PrefabInternal: {fileID: 209098305}
+--- !u!82 &209098309
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 209098307}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1.77
+  MaxDistance: 34.14
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1001 &211995595
 Prefab:
   m_ObjectHideFlags: 0
@@ -2861,6 +2941,10 @@ PlayableDirector:
     value: {fileID: 24120341}
   - key: {fileID: 114635623981570374, guid: 0d2b2aad14ee75647bb6dbad8a926098, type: 2}
     value: {fileID: 55829971}
+  - key: {fileID: 114900082002005862, guid: 0d2b2aad14ee75647bb6dbad8a926098, type: 2}
+    value: {fileID: 209098309}
+  - key: {fileID: 114471575542315096, guid: 0d2b2aad14ee75647bb6dbad8a926098, type: 2}
+    value: {fileID: 209098309}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &432226509

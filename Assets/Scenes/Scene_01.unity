@@ -9372,7 +9372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: d917878d9117cfc438d730246365e53c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.028474774
+      value: 0.028474757
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: d917878d9117cfc438d730246365e53c, type: 3}
       propertyPath: m_Name
@@ -9990,7 +9990,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.57
   MaxDistance: 83.3
   Pan2D: 0
   rolloffMode: 0
@@ -13162,7 +13162,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400042, guid: d917878d9117cfc438d730246365e53c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.028474772
+      value: 0.028474756
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d917878d9117cfc438d730246365e53c, type: 3}
@@ -14319,6 +14319,8 @@ PlayableDirector:
     value: {fileID: 1127690505}
   - key: {fileID: 114776154417006416, guid: 085301d4f634ffa4186eac4cf7857baf, type: 2}
     value: {fileID: 507802850}
+  - key: {fileID: 114500333084041138, guid: 085301d4f634ffa4186eac4cf7857baf, type: 2}
+    value: {fileID: 1127690505}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &1775109527
