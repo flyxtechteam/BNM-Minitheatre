@@ -42,12 +42,12 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 0.35
-      radius: 0.3
+      intensity: 0.52
+      radius: 1.21
       sampleCount: 10
       downsampling: 1
       forceForwardCompatibility: 0
-      ambientOnly: 1
+      ambientOnly: 0
       highPrecision: 0
   screenSpaceReflection:
     m_Enabled: 0
@@ -83,28 +83,28 @@ MonoBehaviour:
       sampleCount: 15
       frameBlending: 0
   eyeAdaptation:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
-      lowPercent: 63.227417
+      lowPercent: 75.67531
       highPercent: 99
-      minLuminance: -1.56
-      maxLuminance: -1.22
-      keyValue: 0.38
-      dynamicKeyValue: 0
+      minLuminance: -5
+      maxLuminance: 1
+      keyValue: 0.25
+      dynamicKeyValue: 1
       adaptationType: 0
       speedUp: 2
-      speedDown: 2
-      logMin: -13
-      logMax: 4
+      speedDown: 1
+      logMin: -14
+      logMax: 1
   bloom:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.38
-        threshold: 1
-        softKnee: 0.139
-        radius: 4.94
-        antiFlicker: 0
+        intensity: 0.16
+        threshold: 0.91
+        softKnee: 0.648
+        radius: 6.77
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 1
@@ -334,7 +334,7 @@ MonoBehaviour:
       spectralTexture: {fileID: 2800000, guid: 318cbcd94840f1d48aca4d86234dc2e7, type: 3}
       intensity: 0.282
   grain:
-    m_Enabled: 1
+    m_Enabled: 0
     m_Settings:
       colored: 1
       intensity: 0.325
