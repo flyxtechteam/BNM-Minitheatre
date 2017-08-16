@@ -11872,7 +11872,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -20.22
+      value: -22.19
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -11882,7 +11882,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.61108637
+      value: 0.32636765
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -11892,7 +11892,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.791564
+      value: 0.94524294
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -11902,12 +11902,12 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 86.23
+      value: 78.86
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 4.94
+      value: 3.64
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -11952,7 +11952,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 75.336006
+      value: 38.097
       objectReference: {fileID: 0}
     - target: {fileID: 114045625776452846, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -11975,6 +11975,21 @@ Prefab:
       propertyPath: m_Text
       value: The first city state was built by ancient Akkadian upon the Euphrates
         river around 2300 BC, known as Babylon.
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5a53a862014cef479c1bc10adcf48b2, type: 2}

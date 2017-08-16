@@ -2918,6 +2918,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.331
       objectReference: {fileID: 0}
+    - target: {fileID: 82586201449788836, guid: ddb8964d74b1fe942afb5d26f6a7165b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7dbb1697226ffc04da7f220e6452c510, type: 3}
     m_RemovedComponents:
     - {fileID: 320735927826152458, guid: ddb8964d74b1fe942afb5d26f6a7165b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ddb8964d74b1fe942afb5d26f6a7165b, type: 2}
@@ -9580,7 +9585,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -130.61
+      value: -130.633
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -9590,7 +9595,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.97290444
+      value: 0.97648865
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -9600,7 +9605,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.2312075
+      value: -0.21556897
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -9610,12 +9615,12 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 133.64
+      value: 133.99
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 3.06
+      value: 3.007
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -9660,7 +9665,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 206.736
+      value: 204.898
       objectReference: {fileID: 0}
     - target: {fileID: 114045625776452846, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -9683,6 +9688,21 @@ Prefab:
       propertyPath: m_Text
       value: The first coin known as "Lydian Lion". Made by silver and gold. Dated
         around 610 BC - 600 BC.
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5a53a862014cef479c1bc10adcf48b2, type: 2}
