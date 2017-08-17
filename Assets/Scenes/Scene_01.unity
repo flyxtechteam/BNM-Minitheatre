@@ -4480,7 +4480,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -63.71
+      value: -64.35
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -4490,7 +4490,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.85293376
+      value: 0.93882227
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -4500,7 +4500,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.5220192
+      value: 0.34440222
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -4510,12 +4510,12 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1.66
+      value: 2.67
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 3.83
+      value: 2.53
       objectReference: {fileID: 0}
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -4560,7 +4560,7 @@ Prefab:
     - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 117.064
+      value: 139.709
       objectReference: {fileID: 0}
     - target: {fileID: 114045625776452846, guid: f5a53a862014cef479c1bc10adcf48b2,
         type: 2}
@@ -4603,6 +4603,21 @@ Prefab:
       propertyPath: m_Text
       value: Human found the way to create and control a fire around 1 million years
         ago.
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 224303368742222032, guid: f5a53a862014cef479c1bc10adcf48b2,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5a53a862014cef479c1bc10adcf48b2, type: 2}
