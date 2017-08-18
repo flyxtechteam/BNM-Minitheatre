@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -334,7 +334,7 @@ GameObject:
   - component: {fileID: 561634775}
   - component: {fileID: 561634776}
   m_Layer: 0
-  m_Name: ui
+  m_Name: languageUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,8 +391,9 @@ GameObject:
   m_Component:
   - component: {fileID: 613473605}
   - component: {fileID: 613473604}
+  - component: {fileID: 613473606}
   m_Layer: 0
-  m_Name: LanguageSelectManager
+  m_Name: SceneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -432,6 +433,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &613473606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 613473603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 966784bc15c63294e94f58616563b961, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelToLoad: Scene_01
+  timeline: {fileID: 0}
+  sceneTransition: {fileID: 561634776}
 --- !u!1 &632498751
 GameObject:
   m_ObjectHideFlags: 0

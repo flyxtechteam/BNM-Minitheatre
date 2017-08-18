@@ -1,33 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlaybackControl : MonoBehaviour
 {
-	[SerializeField]
-	KeyCode cycleKey = KeyCode.W;
-
     [SerializeField]
     Animator pauseOverlay;
+
+    [SerializeField]
+    PlayableDirector timeline;
 
     [SerializeField]
     float pauseDelay = 5f;
 
     bool pause = false;
     float scaleRate = 0.05f;
-    float targetTimeScale = 0f;
+    float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
-
-
+    float audioFadeDuration = 2f;
+    
     void Update ()
 	{
-		if ((!Input.GetKey(cycleKey)) && (!pause))
+		if ((!Input.GetKey(GlobalData.key_cycle)) && (!pause))
 		{
             StartCoroutine("DelayPause");
             pause = true;
         }
 		
-		if (Input.GetKeyDown(cycleKey))
+		if (Input.GetKeyDown(GlobalData.key_cycle))
 		{ 
             StopCoroutine("DelayPause");
             targetTimeScale = 1f;
@@ -61,6 +62,15 @@ public class PlaybackControl : MonoBehaviour
                 }
             }
         }
+
+        if (timeline.time < audioFadeDuration)
+        {
+            AudioListener.volume = (float) (timeline.time / audioFadeDuration);
+        }
+        else if (timeline.time >= timeline.duration - audioFadeDuration)
+        {
+            AudioListener.volume = (float) ((timeline.time - (timeline.duration - audioFadeDuration)) / audioFadeDuration);
+        }
 	}
 
     IEnumerator DelayPause()
@@ -71,6 +81,7 @@ public class PlaybackControl : MonoBehaviour
         {
             targetTimeScale = 0f;
             pauseOverlay.SetBool("paused", true);
+            pauseOverlay.gameObject.SetActive(true);
         }
     }
 }

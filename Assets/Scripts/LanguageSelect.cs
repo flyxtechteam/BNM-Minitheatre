@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class LanguageSelect : MonoBehaviour {
 
-    KeyCode englishKey = KeyCode.A;
-    KeyCode malayKey = KeyCode.D;
-
     // How long to hold key before scene loads
     [SerializeField]
     float delayTime = 2f;
@@ -40,7 +37,7 @@ public class LanguageSelect : MonoBehaviour {
         if (!transitioning)
         {
             // ENGLISH KEY IS PRESSED
-            if (Input.GetKey(englishKey))
+            if (Input.GetKey(GlobalData.key_left))
             {
                 if (language == 1)
                 {
@@ -55,6 +52,7 @@ public class LanguageSelect : MonoBehaviour {
                     }
                     else
                     {
+                        GlobalData.language = 0;
                         CueSceneChange();
                     }
                 }
@@ -72,7 +70,7 @@ public class LanguageSelect : MonoBehaviour {
                 flagLeft.color = new Color(flagLeft.color.r, flagLeft.color.g, flagLeft.color.b, Mathf.Lerp(flagLeft.color.a, 1f, damping));
             }
             // MALAY KEY IS PRESSED
-            else if (Input.GetKey(malayKey))
+            else if (Input.GetKey(GlobalData.key_right))
             {
                 if (language == 0)
                 {
@@ -87,6 +85,7 @@ public class LanguageSelect : MonoBehaviour {
                     }
                     else
                     {
+                        GlobalData.language = 1;
                         CueSceneChange();
                     }
                 }
@@ -123,15 +122,6 @@ public class LanguageSelect : MonoBehaviour {
     void CueSceneChange()
     {
         sceneTransition.enabled = true;
-
-        StartCoroutine("SceneChange");
         transitioning = true;
-    }
-
-    IEnumerator SceneChange()
-    {
-        yield return new WaitUntil(() => sceneTransition.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
-
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Scene_01");
     }
 }
