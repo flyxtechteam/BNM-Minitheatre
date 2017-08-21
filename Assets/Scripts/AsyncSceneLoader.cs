@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-public class AsyncSceneLoader : MonoBehaviour {
-
+public class AsyncSceneLoader : MonoBehaviour
+{
     [SerializeField]
     string levelToLoad;
 
