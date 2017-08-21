@@ -1,0 +1,218 @@
+fileFormatVersion: 2
+guid: dc969ef5fab8b8744a26d4291e7437dd
+timeCreated: 1502262829
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Anim_Horse
+    100002: Base
+    100004: Bone.003
+    100006: //RootNode
+    100008: Chest
+    100010: FootBack.L
+    100012: FootBack.L_end
+    100014: FootBack.R
+    100016: FootBack.R_end
+    100018: FootFront.L
+    100020: FootFront.L_end
+    100022: FootFront.R
+    100024: FootFront.R_end
+    100026: Head
+    100028: Head_end
+    100030: Horse
+    100032: IKFootBack.L
+    100034: IKFootBack.L_end
+    100036: IKFootBack.R
+    100038: IKFootBack.R_end
+    100040: IKFootFront.L
+    100042: IKFootFront.L_end
+    100044: IKFootFront.R
+    100046: IKFootFront.R_end
+    100048: IKHead
+    100050: IKHead_end
+    100052: IKTail
+    100054: IKTail_end
+    100056: KneeBack.L
+    100058: KneeBack.L_end
+    100060: KneeBack.R
+    100062: KneeBack.R_end
+    100064: KneeFront.L
+    100066: KneeFront.L_end
+    100068: KneeFront.R
+    100070: KneeFront.R_end
+    100072: LegHiFront.L
+    100074: LegHiFront.R
+    100076: LegLowBack.L
+    100078: LegLowBack.L.001
+    100080: LegLowFront.L
+    100082: LegLowFront.R
+    100084: LegMidBack.L
+    100086: LegMidBack.R
+    100088: LegMidFront.L
+    100090: LegMidFront.R
+    100092: LegUpBack.L
+    100094: LegUpBack.R
+    100096: Neck
+    100098: TailHi
+    100100: TailLow
+    100102: TailLow_end
+    400000: Anim_Horse
+    400002: Base
+    400004: Bone.003
+    400006: //RootNode
+    400008: Chest
+    400010: FootBack.L
+    400012: FootBack.L_end
+    400014: FootBack.R
+    400016: FootBack.R_end
+    400018: FootFront.L
+    400020: FootFront.L_end
+    400022: FootFront.R
+    400024: FootFront.R_end
+    400026: Head
+    400028: Head_end
+    400030: Horse
+    400032: IKFootBack.L
+    400034: IKFootBack.L_end
+    400036: IKFootBack.R
+    400038: IKFootBack.R_end
+    400040: IKFootFront.L
+    400042: IKFootFront.L_end
+    400044: IKFootFront.R
+    400046: IKFootFront.R_end
+    400048: IKHead
+    400050: IKHead_end
+    400052: IKTail
+    400054: IKTail_end
+    400056: KneeBack.L
+    400058: KneeBack.L_end
+    400060: KneeBack.R
+    400062: KneeBack.R_end
+    400064: KneeFront.L
+    400066: KneeFront.L_end
+    400068: KneeFront.R
+    400070: KneeFront.R_end
+    400072: LegHiFront.L
+    400074: LegHiFront.R
+    400076: LegLowBack.L
+    400078: LegLowBack.L.001
+    400080: LegLowFront.L
+    400082: LegLowFront.R
+    400084: LegMidBack.L
+    400086: LegMidBack.R
+    400088: LegMidFront.L
+    400090: LegMidFront.R
+    400092: LegUpBack.L
+    400094: LegUpBack.R
+    400096: Neck
+    400098: TailHi
+    400100: TailLow
+    400102: TailLow_end
+    4300000: Horse
+    7400000: Anim_Horse|HorseWalk
+    9500000: //RootNode
+    13700000: Horse
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Anim_Horse|HorseWalk
+      takeName: Anim_Horse|HorseWalk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.27
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

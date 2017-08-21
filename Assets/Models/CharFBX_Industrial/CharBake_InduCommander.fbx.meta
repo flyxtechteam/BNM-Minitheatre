@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 90bbc49c75bb2224eb2665740deebcea
+timeCreated: 1501658870
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Anim_InduSoldier
+    100002: Arm.L
+    100004: Arm.R
+    100006: Bone
+    100008: CaptainHat
+    100010: CaptSword
+    100012: //RootNode
+    100014: Chest
+    100016: Elbow.L
+    100018: Elbow.L_end
+    100020: Elbow.R
+    100022: Elbow.R_end
+    100024: Feet.L
+    100026: Feet.L_end
+    100028: Feet.R
+    100030: Feet.R_end
+    100032: Hand.L
+    100034: Hand.L_end
+    100036: Hand.R
+    100038: Hand.R_end
+    100040: Head
+    100042: Head_end
+    100044: IKFeet.L
+    100046: IKFeet.R
+    100048: IKHand.L
+    100050: IKHand.L_end
+    100052: IKHand.R
+    100054: IKHand.R_end
+    100056: InduCaptain
+    100058: Knee.L
+    100060: Knee.L_end
+    100062: Knee.R
+    100064: Knee.R_end
+    100066: Leg.L
+    100068: Leg.L_end
+    100070: Leg.R
+    100072: Leg.R_end
+    100074: Neck
+    100076: Shoulder.L
+    100078: Shoulder.R
+    100080: Stomach
+    100082: Tight.L
+    100084: Tight.R
+    400000: Anim_InduSoldier
+    400002: Arm.L
+    400004: Arm.R
+    400006: Bone
+    400008: CaptainHat
+    400010: CaptSword
+    400012: //RootNode
+    400014: Chest
+    400016: Elbow.L
+    400018: Elbow.L_end
+    400020: Elbow.R
+    400022: Elbow.R_end
+    400024: Feet.L
+    400026: Feet.L_end
+    400028: Feet.R
+    400030: Feet.R_end
+    400032: Hand.L
+    400034: Hand.L_end
+    400036: Hand.R
+    400038: Hand.R_end
+    400040: Head
+    400042: Head_end
+    400044: IKFeet.L
+    400046: IKFeet.R
+    400048: IKHand.L
+    400050: IKHand.L_end
+    400052: IKHand.R
+    400054: IKHand.R_end
+    400056: InduCaptain
+    400058: Knee.L
+    400060: Knee.L_end
+    400062: Knee.R
+    400064: Knee.R_end
+    400066: Leg.L
+    400068: Leg.L_end
+    400070: Leg.R
+    400072: Leg.R_end
+    400074: Neck
+    400076: Shoulder.L
+    400078: Shoulder.R
+    400080: Stomach
+    400082: Tight.L
+    400084: Tight.R
+    2300000: CaptainHat
+    2300002: CaptSword
+    3300000: CaptainHat
+    3300002: CaptSword
+    4300000: CaptainHat
+    4300002: CaptSword
+    4300004: InduCaptain
+    7400000: Anim_InduSoldier|CaptStand
+    7400002: Anim_InduSoldier|CaptStop
+    7400004: Anim_InduSoldier|CaptWalk
+    9500000: //RootNode
+    13700000: InduCaptain
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Anim_InduSoldier|CaptStand
+      takeName: Anim_InduSoldier|CaptStand
+      firstFrame: 0
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_InduSoldier|CaptStop
+      takeName: Anim_InduSoldier|CaptStop
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_InduSoldier|CaptWalk
+      takeName: Anim_InduSoldier|CaptWalk
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.35
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
