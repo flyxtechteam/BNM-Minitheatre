@@ -69,7 +69,7 @@ public class PlaybackControl : MonoBehaviour
         }
         else if (timeline.time >= timeline.duration - audioFadeDuration)
         {
-            AudioListener.volume = (float) ((timeline.time - (timeline.duration - audioFadeDuration)) / audioFadeDuration);
+            AudioListener.volume = (float) (1f - ((timeline.time - (timeline.duration - audioFadeDuration)) / audioFadeDuration));
         }
 	}
 

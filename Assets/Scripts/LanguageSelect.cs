@@ -26,6 +26,9 @@ public class LanguageSelect : MonoBehaviour {
     UnityEngine.UI.Text textLeft, textRight;
 
     [SerializeField]
+    UITextHandler textThankYou1, textThankYou2;
+
+    [SerializeField]
     Animator sceneTransition;
 
     bool transitioning = false;
@@ -123,5 +126,8 @@ public class LanguageSelect : MonoBehaviour {
     {
         sceneTransition.enabled = true;
         transitioning = true;
+
+        textThankYou1.InitLanguage();
+        textThankYou2.InitLanguage();
     }
 }
