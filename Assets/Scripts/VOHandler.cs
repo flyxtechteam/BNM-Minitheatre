@@ -13,6 +13,10 @@ public class VOHandler : MonoBehaviour
     [SerializeField]
     UnityEngine.Audio.AudioMixerGroup mixerGroup;
 
+    [SerializeField]
+    [Tooltip("Override - change language to Malay. For testing purposes only. Make sure to uncheck before build.")]
+    bool LanguageOverrideToMalay = false;
+
     AudioSource source;
 
     bool init = false;
@@ -29,6 +33,7 @@ public class VOHandler : MonoBehaviour
     void Start()
     {
         init = true;
+        Debug.Log("Initialized!");
     }
 
     void OnEnable()
@@ -36,9 +41,26 @@ public class VOHandler : MonoBehaviour
         if (init)
         {
             Debug.Log("Current: " + currentSet.ToString() + ", Language: " + GlobalData.language.ToString() + ", VO: " + ((currentSet * 2) + GlobalData.language).ToString());
-            source.clip = VOAudioClipSets[(currentSet * 2) + GlobalData.language];
+
+            if (!LanguageOverrideToMalay)
+            {
+                source.clip = VOAudioClipSets[(currentSet * 2) + GlobalData.language];
+            }
+            else
+            {
+                source.clip = VOAudioClipSets[(currentSet * 2) + 1];
+            }
+            
             source.Play();
-            currentSet++;
+
+            if (currentSet < VOAudioClipSets.Length - 1)
+            {
+                currentSet++;
+            }
+            else
+            {
+                currentSet = 0;
+            }
         }
     }
 }
