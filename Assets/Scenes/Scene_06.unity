@@ -14529,7 +14529,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.24
+  m_Volume: 0.31
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22700,8 +22700,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_PlayOnAwake: 0
+  m_Volume: 0.23
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -22710,7 +22710,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 14.5
-  MaxDistance: 486.8
+  MaxDistance: 555.1
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
