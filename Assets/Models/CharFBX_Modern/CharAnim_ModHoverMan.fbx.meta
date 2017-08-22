@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a756c3b81963d804ea5f0abd551029d1
-timeCreated: 1503285739
+timeCreated: 1503373676
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -94,10 +94,16 @@ ModelImporter:
     4300000: Hoverboard
     4300002: JacketMan
     7400000: HoverboardSpin
-    7400002: Anim_JacketMan|Hoverboard (Man)
-    7400004: Anim_JacketMan|Hoverboard Dancing
-    7400006: Anim_JacketMan|HoverboardSit
-    7400008: Anim_JacketMan|HoverboardSpin
+    7400002: HoverboardSide
+    7400004: HoverboardMoveLook
+    7400006: Hoverboard (Man)
+    7400008: Anim_JacketMan|Hoverboard Dancing
+    7400010: Anim_JacketMan|HoverboardMoveBack
+    7400012: Anim_JacketMan|HoverboardMoveLook
+    7400014: Anim_JacketMan|HoverboardMoveStop
+    7400016: Anim_JacketMan|HoverboardSide
+    7400018: Anim_JacketMan|HoverboardSit
+    7400020: Anim_JacketMan|HoverboardSpin
     9500000: //RootNode
     13700000: JacketMan
   materials:
@@ -125,8 +131,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Anim_JacketMan|Hoverboard (Man)
-      takeName: Anim_JacketMan|Hoverboard (Man)
+      name: Anim_JacketMan|HoverboardMoveBack
+      takeName: Anim_JacketMan|HoverboardMoveBack
       firstFrame: 0
       lastFrame: 540
       wrapMode: 0
@@ -153,17 +159,17 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_JacketMan|Hoverboard Dancing
-      takeName: Anim_JacketMan|Hoverboard Dancing
+      name: Anim_JacketMan|HoverboardMoveLook
+      takeName: Anim_JacketMan|HoverboardMoveLook
       firstFrame: 0
-      lastFrame: 600
+      lastFrame: 177
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -181,10 +187,38 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Anim_JacketMan|HoverboardSit
-      takeName: Anim_JacketMan|HoverboardSit
+      name: Anim_JacketMan|HoverboardMoveStop
+      takeName: Anim_JacketMan|HoverboardMoveStop
       firstFrame: 0
-      lastFrame: 400
+      lastFrame: 266
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Anim_JacketMan|HoverboardSide
+      takeName: Anim_JacketMan|HoverboardSide
+      firstFrame: 0
+      lastFrame: 200
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -219,7 +253,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
