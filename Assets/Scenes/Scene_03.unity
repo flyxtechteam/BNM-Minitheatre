@@ -2963,6 +2963,8 @@ PlayableDirector:
     value: {fileID: 1348209935}
   - key: {fileID: 114656622303724450, guid: 0d2b2aad14ee75647bb6dbad8a926098, type: 2}
     value: {fileID: 1368406525}
+  - key: {fileID: 114301248787163758, guid: 0d2b2aad14ee75647bb6dbad8a926098, type: 2}
+    value: {fileID: 1340383056}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &432226509
@@ -5034,19 +5036,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.82682675
+      value: 0.8268269
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.024347432
+      value: 0.024347436
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.54901046
+      value: -0.5490105
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.11980045
+      value: 0.11980046
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8925,19 +8927,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: 21a1e2fe2c7fb0f45a4219a2f353a884, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.73113453
+      value: 0.7311346
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: 21a1e2fe2c7fb0f45a4219a2f353a884, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.071323045
+      value: -0.07132305
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: 21a1e2fe2c7fb0f45a4219a2f353a884, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.65612936
+      value: 0.6561294
       objectReference: {fileID: 0}
     - target: {fileID: 400082, guid: 21a1e2fe2c7fb0f45a4219a2f353a884, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.1727704
+      value: 0.17277041
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 21a1e2fe2c7fb0f45a4219a2f353a884, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -10887,6 +10889,203 @@ Transform:
   m_Father: {fileID: 991654858}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -181.73}
+--- !u!1001 &1340383055
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -99.407
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.022909308
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.96316767
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.03751818
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.26528433
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 129.908
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 6.346
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 149.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 3.4470003
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -3.6780002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114170181582646066, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114638978238151578, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114573906996244192, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114873695376945120, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Text
+      value: Syiling empayar Lydia adalah syiling yang terawal dicipta, sekitar tahun
+        600 SM
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245910870175576, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c5e626483b09ce418670c12e0132d25,
+        type: 3}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.0535113
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.0535108
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.0535108
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02e99b1b50ecfd24da95618cf991dfa6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1340383056 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1017404130061064, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1340383055}
+--- !u!1 &1340383057 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1932970292309072, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1340383055}
+--- !u!114 &1340383058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340383057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - Lydian Lion coins were the  first coins minted in 600 BC
+  - Syiling empayar Lydia adalah syiling yang terawal dicipta, sekitar tahun 600 SM
+  initOnStart: 1
 --- !u!1001 &1341380441
 Prefab:
   m_ObjectHideFlags: 0
@@ -14387,19 +14586,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.8268269
+      value: 0.82682675
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.024347436
+      value: 0.024347432
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5490105
+      value: -0.54901046
       objectReference: {fileID: 0}
     - target: {fileID: 400074, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.11980046
+      value: 0.11980045
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: 7183008bf7177274e96ab99feea7a068, type: 3}
       propertyPath: m_Materials.Array.data[0]

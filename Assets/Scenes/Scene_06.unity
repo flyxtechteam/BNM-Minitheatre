@@ -12710,7 +12710,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: ee9cafbbe221c174f9e890120a852884, type: 3}
   mixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
     type: 2}
-  LanguageOverrideToMalay: 1
+  LanguageOverrideToMalay: 0
 --- !u!4 &1195849011
 Transform:
   m_ObjectHideFlags: 0

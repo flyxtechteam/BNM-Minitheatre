@@ -13082,6 +13082,174 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b57f3ed3639c0844e9e0859987b0ba15, type: 3}
   m_PrefabInternal: {fileID: 1028389235}
+--- !u!1001 &346483898
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -37.683033
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.0062983707
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999802
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 31.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224349348906176042, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.72200006
+      objectReference: {fileID: 0}
+    - target: {fileID: 114573906996244192, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114170181582646066, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114638978238151578, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: fb4229d9f849ab4408a8f5e4f770e0de, type: 2}
+    - target: {fileID: 114873695376945120, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Text
+      value: 'The first city state in the
+
+        world was Mesopotamia'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114245910870175576, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ffbdd21df1792614ba30b4aef47cf131,
+        type: 3}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.626684
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.6266842
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.6266842
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02e99b1b50ecfd24da95618cf991dfa6, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &346483899 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1932970292309072, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 346483898}
+--- !u!114 &346483900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 346483899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - The first city state in the world was Mesopotamia
+  - Mesopotamia merupakan negara kota yang terawal di dunia
+  initOnStart: 1
 --- !u!4 &350203771 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b57f3ed3639c0844e9e0859987b0ba15, type: 3}
@@ -43386,6 +43554,8 @@ PlayableDirector:
     value: {fileID: 1729298593}
   - key: {fileID: 114048332089299354, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
     value: {fileID: 142346002}
+  - key: {fileID: 114535334493430764, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
+    value: {fileID: 1853930374}
   m_ExposedReferences:
     m_References: []
 --- !u!65 &1771910083
@@ -44612,6 +44782,11 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b57f3ed3639c0844e9e0859987b0ba15, type: 3}
   m_PrefabInternal: {fileID: 938179782}
+--- !u!1 &1853930374 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1017404130061064, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 346483898}
 --- !u!1001 &1856591865
 Prefab:
   m_ObjectHideFlags: 0

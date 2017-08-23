@@ -19,12 +19,26 @@ public class PlaybackControl : MonoBehaviour
     float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
     float audioFadeDuration = 2f;
-    
+
+    // For debug only
+    public float timeLeft = 0f;
+        
     void Update ()
 	{
+        // Update timeleft (for debug)
+        if (timeLeft > 0f)
+        {
+            timeLeft -= Time.deltaTime;
+        }
+        else
+        {
+            timeLeft = 0f;
+        }
+
 		if ((!Input.GetKey(GlobalData.key_cycle)) && (!pause))
 		{
             StartCoroutine("DelayPause");
+            timeLeft = pauseDelay;
             pause = true;
         }
 		
@@ -32,6 +46,7 @@ public class PlaybackControl : MonoBehaviour
 		{ 
             StopCoroutine("DelayPause");
             targetTimeScale = 1f;
+            timeLeft = 0f;
             pause = false;
 
             pauseOverlay.SetBool("paused", false);
@@ -75,7 +90,7 @@ public class PlaybackControl : MonoBehaviour
 
     IEnumerator DelayPause()
     {
-        yield return new WaitForSeconds(pauseDelay);
+        yield return new WaitForSecondsRealtime(pauseDelay);
 
         if (pause == true)
         {
