@@ -15,6 +15,7 @@ public class AsyncSceneLoader : MonoBehaviour
     Animator sceneTransition;
 
     float timelineThreshold = 0.1f;
+    float currentCounter = 0f;
 
     // Init async operation - will start loading once set from null
     AsyncOperation async = null;
