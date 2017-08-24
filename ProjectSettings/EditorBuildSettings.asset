@@ -5,9 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LanguageSelect.unity
     guid: 79dfbb560ac7f374d86bfcdf0b1c9af8
   - enabled: 1
+    path: Assets/Scenes/Si_Kijang/Introduction/Scenes/Introduction.unity
+    guid: e604047407c869f4fa4538c41a4a56e4
+  - enabled: 0
     path: Assets/Scenes/Scene_01.unity
     guid: 155034c8f6084a04f85d07a11c0005ff
