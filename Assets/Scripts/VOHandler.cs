@@ -33,15 +33,12 @@ public class VOHandler : MonoBehaviour
     void Start()
     {
         init = true;
-        Debug.Log("Initialized!");
     }
 
     void OnEnable()
     {
         if (init)
         {
-            Debug.Log("Current: " + currentSet.ToString() + ", Language: " + GlobalData.language.ToString() + ", VO: " + ((currentSet * 2) + GlobalData.language).ToString());
-
             if (!LanguageOverrideToMalay)
             {
                 source.clip = VOAudioClipSets[(currentSet * 2) + GlobalData.language];

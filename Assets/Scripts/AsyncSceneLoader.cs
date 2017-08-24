@@ -47,10 +47,11 @@ public class AsyncSceneLoader : MonoBehaviour
                     ActivateScene();
                 }
             }
+            // If neither are assigned, ActivateScene() must be called externally
         }
     }
 
-    void ActivateScene()
+    public void ActivateScene()
     {
         async.allowSceneActivation = true;
     }

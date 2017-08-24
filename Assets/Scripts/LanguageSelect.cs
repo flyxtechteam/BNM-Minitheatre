@@ -9,38 +9,50 @@ public class LanguageSelect : MonoBehaviour {
     float delayTime = 2f;
     float currentTime = 0f;
 
-    // How faded image and text appears when not selected
-    [SerializeField]
-    float fadeAlpha = 0.5f;
-    float currentAlpha = 1f;
-
     // Recession rate
     [SerializeField]
     float damping = 0.1f;
 
     // Radial fill images and flag images
     [SerializeField]
-    UnityEngine.UI.Image fillLeft, fillRight, flagLeft, flagRight;
-
-    [SerializeField]
-    UnityEngine.UI.Text textLeft, textRight;
+    Animator fillLeft, fillRight;
 
     [SerializeField]
     UITextHandler textThankYou1, textThankYou2;
 
     [SerializeField]
+    CanvasGroup selectionUI, thankYouUI;
+
+    [SerializeField]
+    float confirmedScreenTime = 5f;
+
+    [SerializeField]
+    float UIFadeTime = 1f;
+
+    [SerializeField]
     Animator sceneTransition;
 
-    bool transitioning = false;
+    [SerializeField]
+    GameObject leftArrow, rightArrow;
+
+    bool selectionUIVisible = true;
+    bool thankYouUIVisible = false;
+    bool blockInput = false;
 
     int language = 0; //0 - English, 1 - Malay
-    
-    void Update ()
+
+    void Start()
+    {
+        fillLeft.speed = 0f;
+        fillRight.speed = 0f;
+    }
+
+    void Update()
     {   
-        if (!transitioning)
+        // ENGLISH KEY IS PRESSED
+        if ((Input.GetKey(GlobalData.key_left)) && (!blockInput))
         {
-            // ENGLISH KEY IS PRESSED
-            if (Input.GetKey(GlobalData.key_left))
+            if (!blockInput)
             {
                 if (language == 1)
                 {
@@ -56,78 +68,106 @@ public class LanguageSelect : MonoBehaviour {
                     else
                     {
                         GlobalData.language = 0;
-                        CueSceneChange();
+                        SelectionConfirmed();
                     }
                 }
-
-                // set radial fill amount to reflect current progress
-                fillLeft.fillAmount = currentTime / delayTime;
-                fillRight.fillAmount = Mathf.Lerp(fillRight.fillAmount, 0f, damping);
-
-                // fade out unselected flag image and text
-                textRight.color = new Color(textRight.color.r, textRight.color.g, textRight.color.b, Mathf.Lerp(textRight.color.a, fadeAlpha, damping));
-                flagRight.color = new Color(flagRight.color.r, flagRight.color.g, flagRight.color.b, Mathf.Lerp(flagRight.color.a, fadeAlpha, damping));
-
-                // fade in selected flag
-                textLeft.color = new Color(textLeft.color.r, textLeft.color.g, textLeft.color.b, Mathf.Lerp(textLeft.color.a, 1f, damping));
-                flagLeft.color = new Color(flagLeft.color.r, flagLeft.color.g, flagLeft.color.b, Mathf.Lerp(flagLeft.color.a, 1f, damping));
             }
-            // MALAY KEY IS PRESSED
-            else if (Input.GetKey(GlobalData.key_right))
+
+            // set radial fill amount to reflect current progress
+            fillLeft.Play(0, 0, currentTime / delayTime);
+            fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+
+            leftArrow.SetActive(true);
+            rightArrow.SetActive(false);
+        }
+        // MALAY KEY IS PRESSED
+        else if ((Input.GetKey(GlobalData.key_right)) && (!blockInput))
+        {
+            if (language == 0)
             {
-                if (language == 0)
+                language = 1;
+                currentTime = 0;
+            }
+            else
+            {
+                if (currentTime < delayTime)
                 {
-                    language = 1;
-                    currentTime = 0;
+                    currentTime += Time.deltaTime;
                 }
                 else
                 {
-                    if (currentTime < delayTime)
-                    {
-                        currentTime += Time.deltaTime;
-                    }
-                    else
-                    {
-                        GlobalData.language = 1;
-                        CueSceneChange();
-                    }
+                    GlobalData.language = 1;
+                    SelectionConfirmed();
                 }
-
-                // set radial fill amount to reflect current progress
-                fillRight.fillAmount = currentTime / delayTime;
-                fillLeft.fillAmount = Mathf.Lerp(fillLeft.fillAmount, 0f, damping);
-
-                // fade out unselected flag image and text
-                textLeft.color = new Color(textLeft.color.r, textLeft.color.g, textLeft.color.b, Mathf.Lerp(textLeft.color.a, fadeAlpha, damping));
-                flagLeft.color = new Color(flagLeft.color.r, flagLeft.color.g, flagLeft.color.b, Mathf.Lerp(flagLeft.color.a, fadeAlpha, damping));
-
-                // fade in selected flag
-                textRight.color = new Color(textRight.color.r, textRight.color.g, textRight.color.b, Mathf.Lerp(textRight.color.a, 1f, damping));
-                flagRight.color = new Color(flagRight.color.r, flagRight.color.g, flagRight.color.b, Mathf.Lerp(flagRight.color.a, 1f, damping));
             }
-            // NO KEYS PRESSED
-            else
-            {
-                // reset progress and both radial fills
-                currentTime = 0f;
-                fillLeft.fillAmount = Mathf.Lerp(fillLeft.fillAmount, 0f, damping);
-                fillRight.fillAmount = Mathf.Lerp(fillRight.fillAmount, 0f, damping);
 
-                // fade back in both flags and text
-                textLeft.color = new Color(textLeft.color.r, textLeft.color.g, textLeft.color.b, Mathf.Lerp(textLeft.color.a, 1f, damping));
-                textRight.color = new Color(textRight.color.r, textRight.color.g, textRight.color.b, Mathf.Lerp(textRight.color.a, 1f, damping));
-                flagLeft.color = new Color(flagLeft.color.r, flagLeft.color.g, flagLeft.color.b, Mathf.Lerp(flagLeft.color.a, 1f, damping));
-                flagRight.color = new Color(flagRight.color.r, flagRight.color.g, flagRight.color.b, Mathf.Lerp(flagRight.color.a, 1f, damping));
-            }
+            // set radial fill amount to reflect current progress
+            fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+            fillRight.Play(0, 0, currentTime / delayTime);
+
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(true);
+        }
+        // NO KEYS PRESSED
+        else
+        {
+            // reset progress and both radial fills
+            currentTime = 0f;
+            fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+            fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+
+            leftArrow.SetActive(false);
+            rightArrow.SetActive(false);
+        }
+
+        // Fade in, out if transition due
+        if ((!selectionUIVisible) && (selectionUI.alpha > 0f))
+        {
+            selectionUI.alpha -= Time.deltaTime;
+        }
+
+        if ((selectionUIVisible) && (selectionUI.alpha < 1f))
+        {
+            selectionUI.alpha += Time.deltaTime;
+        }
+
+        if ((!thankYouUIVisible) && (thankYouUI.alpha > 0f))
+        {
+            thankYouUI.alpha -= Time.deltaTime;
+        }
+
+        if ((thankYouUIVisible) && (thankYouUI.alpha < 1f))
+        {
+            thankYouUI.alpha += Time.deltaTime;
         }
     }
 
-    void CueSceneChange()
+    void SelectionConfirmed()
     {
-        sceneTransition.enabled = true;
-        transitioning = true;
+        selectionUIVisible = false;
+        blockInput = true;
 
         textThankYou1.InitLanguage();
         textThankYou2.InitLanguage();
+
+        StartCoroutine(CueSceneChange());
+        StartCoroutine(CueThankYouFadeIn());
+
+        leftArrow.SetActive(false);
+        rightArrow.SetActive(false);
+    }
+
+    IEnumerator CueThankYouFadeIn()
+    {
+        yield return new WaitForSeconds(UIFadeTime);
+
+        thankYouUIVisible = true;
+    }
+
+    IEnumerator CueSceneChange()
+    {
+        yield return new WaitForSeconds(confirmedScreenTime);
+
+        sceneTransition.enabled = true;
     }
 }
