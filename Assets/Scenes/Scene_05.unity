@@ -2766,7 +2766,8 @@ AudioSource:
   m_GameObject: {fileID: 63099552}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
@@ -7342,8 +7343,26 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82586201449788836, guid: ddb8964d74b1fe942afb5d26f6a7165b,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243054872935082654, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+        type: 2}
+    - target: {fileID: 82586201449788836, guid: ddb8964d74b1fe942afb5d26f6a7165b,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f97965a152d95f45b6af0c0737b667d, type: 3}
+    - target: {fileID: 82299556862578170, guid: ddb8964d74b1fe942afb5d26f6a7165b,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 320735927826152458, guid: ddb8964d74b1fe942afb5d26f6a7165b, type: 2}
+    - {fileID: 82299556862578170, guid: ddb8964d74b1fe942afb5d26f6a7165b, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ddb8964d74b1fe942afb5d26f6a7165b, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &175112529 stripped
@@ -7549,6 +7568,8 @@ PlayableDirector:
     value: {fileID: 175442244}
   - key: {fileID: 114717654047408846, guid: 7dedbee05f9943a49a51d413678b7b2a, type: 2}
     value: {fileID: 1744589661}
+  - key: {fileID: 114997072896051842, guid: 7dedbee05f9943a49a51d413678b7b2a, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &175361801
@@ -7650,7 +7671,8 @@ AudioSource:
   m_GameObject: {fileID: 175442242}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -19234,7 +19256,8 @@ AudioSource:
   m_GameObject: {fileID: 407819795}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.3
@@ -23726,7 +23749,8 @@ AudioSource:
   m_GameObject: {fileID: 529395133}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.6
@@ -26060,7 +26084,8 @@ AudioSource:
   m_GameObject: {fileID: 583559301}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.7
@@ -29144,7 +29169,8 @@ AudioSource:
   m_GameObject: {fileID: 656929230}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.63
@@ -33244,7 +33270,8 @@ AudioSource:
   m_GameObject: {fileID: 758164465}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.35
@@ -33857,6 +33884,42 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90.00101
       objectReference: {fileID: 0}
+    - target: {fileID: 114245910870175576, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0da2991786753c542848967f739df41f,
+        type: 3}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.460429
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.4604286
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.4604286
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -84
+      objectReference: {fileID: 0}
+    - target: {fileID: 114873695376945120, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Text
+      value: The first digital computer, ENIAC, was built in 1946.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02e99b1b50ecfd24da95618cf991dfa6, type: 2}
   m_IsPrefabParent: 0
@@ -33865,6 +33928,26 @@ GameObject:
   m_PrefabParentObject: {fileID: 1017404130061064, guid: 02e99b1b50ecfd24da95618cf991dfa6,
     type: 2}
   m_PrefabInternal: {fileID: 772186760}
+--- !u!1 &772186762 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1932970292309072, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+    type: 2}
+  m_PrefabInternal: {fileID: 772186760}
+--- !u!114 &772186763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 772186762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - The first digital computer, ENIAC, was built in 1946.
+  - Komputer digital pertama di dunia, ENIAC, dicipta pada tahun 1946.
+  initOnStart: 1
 --- !u!1 &772451405
 GameObject:
   m_ObjectHideFlags: 0
@@ -40340,7 +40423,7 @@ Prefab:
     - target: {fileID: 114695794200389536, guid: 327a16cfbb2417949bdf329349d847c5,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 327a16cfbb2417949bdf329349d847c5, type: 2}
@@ -43944,7 +44027,8 @@ AudioSource:
   m_GameObject: {fileID: 1006962630}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -50854,7 +50938,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 2f9137cc16ec51f45b466aed23284567, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.011987409
+      value: -0.011987406
       objectReference: {fileID: 0}
     - target: {fileID: 400046, guid: 2f9137cc16ec51f45b466aed23284567, type: 3}
       propertyPath: m_LocalRotation.z
@@ -76836,7 +76920,8 @@ AudioSource:
   m_GameObject: {fileID: 1656342715}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -77628,7 +77713,8 @@ AudioSource:
   m_GameObject: {fileID: 1670290841}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.6
@@ -80490,7 +80576,8 @@ AudioSource:
   m_GameObject: {fileID: 1744589659}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.4
@@ -86527,7 +86614,8 @@ AudioSource:
   m_GameObject: {fileID: 1867015059}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.7
@@ -96506,7 +96594,8 @@ AudioSource:
   m_GameObject: {fileID: 2071277412}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.61
@@ -97509,7 +97598,8 @@ AudioSource:
   m_GameObject: {fileID: 2097901408}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
