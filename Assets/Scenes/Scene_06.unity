@@ -2806,7 +2806,7 @@ Prefab:
     - target: {fileID: 114176232692639276, guid: 327a16cfbb2417949bdf329349d847c5,
         type: 2}
       propertyPath: levelToLoad
-      value: LanguageSelect
+      value: LanguageSelectv2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 327a16cfbb2417949bdf329349d847c5, type: 2}
