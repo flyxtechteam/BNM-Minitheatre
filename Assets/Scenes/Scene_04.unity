@@ -1475,8 +1475,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDataSet:
-  - SS Archimedes was the first steam ship built in Britain in 1839
-  - SS Archimedes, kapal wap yang pertama, dicipta di Britain pada tahun 1839
+  - The Glorious Revolution, 1688
+  - Revolusi Gemilang, 1688
   initOnStart: 1
 --- !u!4 &77673633 stripped
 Transform:
@@ -20793,8 +20793,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDataSet:
-  - SS Archimedes was the first steam ship built in Britain in 1839
-  - SS Archimedes, kapal wap yang pertama, dicipta di Britain pada tahun 1839
+  - French Revolution, 1789
+  - Revolusi Perancis, 1789
   initOnStart: 1
 --- !u!1001 &579770833
 Prefab:
@@ -68451,6 +68451,37 @@ Prefab:
       value: SS Archimedes, kapal wap yang pertama, dicipta di Britain pada tahun
         1839
       objectReference: {fileID: 0}
+    - target: {fileID: 114245910870175576, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 864cc901d5dcfe143b6e30c30bb543e6,
+        type: 3}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.2518146
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.2518142
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.2518142
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 224557384808900222, guid: 02e99b1b50ecfd24da95618cf991dfa6,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02e99b1b50ecfd24da95618cf991dfa6, type: 2}
   m_IsPrefabParent: 0
@@ -78772,8 +78803,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDataSet:
-  - SS Archimedes was the first steam ship built in Britain in 1839
-  - SS Archimedes, kapal wap yang pertama, dicipta di Britain pada tahun 1839
+  - English Civil War, 1642
+  - Perang Saudara England, 1642
   initOnStart: 1
 --- !u!1001 &1499081706
 Prefab:
