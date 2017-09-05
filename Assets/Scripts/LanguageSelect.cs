@@ -38,6 +38,7 @@ public class LanguageSelect : MonoBehaviour {
     bool selectionUIVisible = true;
     bool thankYouUIVisible = false;
     bool blockInput = false;
+    bool MODE2_selected = false;
 
     int language = 0; //0 - English, 1 - Malay
 
@@ -48,15 +49,48 @@ public class LanguageSelect : MonoBehaviour {
     }
 
     void Update()
-    {   
-        // ENGLISH KEY IS PRESSED
-        if ((Input.GetKey(GlobalData.key_left)) && (!blockInput))
+    {
+        // Two modes of input; use /**/ to comment out the unwanted mode of input
+
         {
-            if (!blockInput)
+            /*
+            // ENGLISH KEY IS PRESSED
+            if ((Input.GetKey(GlobalData.key_left)) && (!blockInput))
             {
-                if (language == 1)
+                if (!blockInput)
                 {
-                    language = 0;
+                    if (language == 1)
+                    {
+                        language = 0;
+                        currentTime = 0;
+                    }
+                    else
+                    {
+                        if (currentTime < delayTime)
+                        {
+                            currentTime += Time.deltaTime;
+                        }
+                        else
+                        {
+                            GlobalData.language = 0;
+                            SelectionConfirmed();
+                        }
+                    }
+                }
+
+                // set radial fill amount to reflect current progress
+                fillLeft.Play(0, 0, currentTime / delayTime);
+                fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+
+                leftArrow.SetActive(true);
+                rightArrow.SetActive(false);
+            }
+            // MALAY KEY IS PRESSED
+            else if ((Input.GetKey(GlobalData.key_right)) && (!blockInput))
+            {
+                if (language == 0)
+                {
+                    language = 1;
                     currentTime = 0;
                 }
                 else
@@ -67,80 +101,97 @@ public class LanguageSelect : MonoBehaviour {
                     }
                     else
                     {
-                        GlobalData.language = 0;
+                        GlobalData.language = 1;
                         SelectionConfirmed();
                     }
                 }
+
+                // set radial fill amount to reflect current progress
+                fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+                fillRight.Play(0, 0, currentTime / delayTime);
+
+                leftArrow.SetActive(false);
+                rightArrow.SetActive(true);
+            }
+            // NO KEYS PRESSED
+            else
+            {
+                // reset progress and both radial fills
+                currentTime = 0f;
+                fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+                fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
+
+                leftArrow.SetActive(false);
+                rightArrow.SetActive(false);
             }
 
-            // set radial fill amount to reflect current progress
-            fillLeft.Play(0, 0, currentTime / delayTime);
-            fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
-
-            leftArrow.SetActive(true);
-            rightArrow.SetActive(false);
-        }
-        // MALAY KEY IS PRESSED
-        else if ((Input.GetKey(GlobalData.key_right)) && (!blockInput))
-        {
-            if (language == 0)
+            // Fade in, out if transition due
+            if ((!selectionUIVisible) && (selectionUI.alpha > 0f))
             {
-                language = 1;
-                currentTime = 0;
+                selectionUI.alpha -= Time.deltaTime;
+            }
+
+            if ((selectionUIVisible) && (selectionUI.alpha < 1f))
+            {
+                selectionUI.alpha += Time.deltaTime;
+            }
+
+            if ((!thankYouUIVisible) && (thankYouUI.alpha > 0f))
+            {
+                thankYouUI.alpha -= Time.deltaTime;
+            }
+
+            if ((thankYouUIVisible) && (thankYouUI.alpha < 1f))
+            {
+                thankYouUI.alpha += Time.deltaTime;
+            }
+        */
+        } // MODE 1: Press and hold to confirm
+
+        {
+            if (MODE2_selected)
+            {
+                AutoFillSelection();
             }
             else
             {
-                if (currentTime < delayTime)
+                if ((Input.GetKey(GlobalData.key_left)) && (!blockInput))
                 {
-                    currentTime += Time.deltaTime;
+                    GlobalData.language = 0;
+                    MODE2_selected = true;
                 }
-                else
+                else if ((Input.GetKey(GlobalData.key_right)) && (!blockInput))
                 {
                     GlobalData.language = 1;
-                    SelectionConfirmed();
+                    MODE2_selected = true;
                 }
             }
+        } // MODE 2: Press once to confirm selection
+    }
 
-            // set radial fill amount to reflect current progress
-            fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
-            fillRight.Play(0, 0, currentTime / delayTime);
+    // Only used for MODE 2
+    void AutoFillSelection()
+    {
+        if (currentTime < delayTime)
+        {
+            if (GlobalData.language == 0)
+            {
+                fillLeft.Play(0, 0, currentTime / delayTime);
+            }
+            else
+            {
+                fillRight.Play(0, 0, currentTime / delayTime);
+            }
 
-            leftArrow.SetActive(false);
-            rightArrow.SetActive(true);
+            currentTime += Time.deltaTime;
         }
-        // NO KEYS PRESSED
         else
         {
-            // reset progress and both radial fills
-            currentTime = 0f;
-            fillLeft.Play(0, 0, Mathf.Lerp(fillLeft.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
-            fillRight.Play(0, 0, Mathf.Lerp(fillRight.GetCurrentAnimatorStateInfo(0).normalizedTime, 0f, damping));
-
-            leftArrow.SetActive(false);
-            rightArrow.SetActive(false);
-        }
-
-        // Fade in, out if transition due
-        if ((!selectionUIVisible) && (selectionUI.alpha > 0f))
-        {
-            selectionUI.alpha -= Time.deltaTime;
-        }
-
-        if ((selectionUIVisible) && (selectionUI.alpha < 1f))
-        {
-            selectionUI.alpha += Time.deltaTime;
-        }
-
-        if ((!thankYouUIVisible) && (thankYouUI.alpha > 0f))
-        {
-            thankYouUI.alpha -= Time.deltaTime;
-        }
-
-        if ((thankYouUIVisible) && (thankYouUI.alpha < 1f))
-        {
-            thankYouUI.alpha += Time.deltaTime;
+            MODE2_selected = false;
+            SelectionConfirmed();            
         }
     }
+
 
     void SelectionConfirmed()
     {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class AsyncSceneLoader : MonoBehaviour
 {
@@ -59,9 +60,12 @@ public class AsyncSceneLoader : MonoBehaviour
     // Start loading, but disallow scene activation (won't switch scenes once done loading)
 	IEnumerator LoadLevel(string levelToLoad)
     {
-        async = UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(levelToLoad);
+        async = SceneManager.LoadSceneAsync(levelToLoad, UnityEngine.SceneManagement.LoadSceneMode.Additive);
         async.allowSceneActivation = false;
 
         yield return async;
+
+        string currentScene = SceneManager.GetActiveScene().name;
+        SceneManager.UnloadSceneAsync(currentScene);
     }
 }

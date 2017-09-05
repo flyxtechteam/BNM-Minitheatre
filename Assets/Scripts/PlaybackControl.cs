@@ -42,14 +42,17 @@ public class PlaybackControl : MonoBehaviour
             pause = true;
         }
 		
-		if (Input.GetKeyDown(GlobalData.key_cycle))
+		if (Input.GetKey(GlobalData.key_cycle))
 		{ 
-            StopCoroutine("DelayPause");
-            targetTimeScale = 1f;
-            timeLeft = 0f;
-            pause = false;
+            if (pause)
+            {
+                StopCoroutine("DelayPause");
+                targetTimeScale = 1f;
+                timeLeft = 0f;
+                pause = false;
 
-            pauseOverlay.SetBool("paused", false);
+                pauseOverlay.SetBool("paused", false);
+            }
         }
 
         if (targetTimeScale == 1f)
@@ -92,7 +95,7 @@ public class PlaybackControl : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(pauseDelay);
 
-        if (pause == true)
+        if (pause)
         {
             targetTimeScale = 0f;
             pauseOverlay.SetBool("paused", true);
