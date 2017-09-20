@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - viewer
+  - camera
+  - overlay
   layers:
   - Default
   - TransparentFX

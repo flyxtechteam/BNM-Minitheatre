@@ -5,11 +5,13 @@ using UnityEngine.Playables;
 
 public class PlaybackControl : MonoBehaviour
 {
-    [SerializeField]
-    Animator pauseOverlay;
+    [SerializeField] Animator pauseOverlay;
+    [SerializeField] UnityEngine.UI.Image fadeOverlay;
 
-    [SerializeField]
-    PlayableDirector timeline;
+    public FadeColor fadeColorIn;
+    public FadeColor fadeColorOut;
+
+    public PlayableDirector timeline;
 
     [SerializeField]
     float pauseDelay = 5f;
@@ -18,11 +20,24 @@ public class PlaybackControl : MonoBehaviour
     float scaleRate = 0.05f;
     float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
-    float audioFadeDuration = 2f;
+    float fadeDuration = 2f;
 
     // For debug only
+    [HideInInspector]
     public float timeLeft = 0f;
-        
+
+    /*void InitFadeOverlay(FadeColor fadeType)
+    {
+        if (fadeType == FadeColor.white)
+        {
+            fadeOverlay.color = Color.white;
+        }
+        else
+        {
+            fadeOverlay.color = Color.black;
+        }
+    }*/
+
     void Update ()
 	{
         // Update timeleft (for debug)
@@ -51,7 +66,10 @@ public class PlaybackControl : MonoBehaviour
                 timeLeft = 0f;
                 pause = false;
 
-                pauseOverlay.SetBool("paused", false);
+                if (pauseOverlay)
+                {
+                    pauseOverlay.SetBool("paused", false);
+                }                
             }
         }
 
@@ -81,13 +99,22 @@ public class PlaybackControl : MonoBehaviour
             }
         }
 
-        if (timeline.time < audioFadeDuration)
+        // Fade audio and visuals as timeline starts off and approaches end
+        // At start of scene
+        if (timeline.time < fadeDuration)
         {
-            AudioListener.volume = (float) (timeline.time / audioFadeDuration);
+            float fade = (float)(timeline.time / fadeDuration);
+
+            AudioListener.volume = fade;
+            fadeOverlay.color = new Color((float)fadeColorIn, (float)fadeColorIn, (float)fadeColorIn, 1 - fade);
         }
-        else if (timeline.time >= timeline.duration - audioFadeDuration)
+        // At end of scene
+        else if (timeline.time >= timeline.duration - fadeDuration)
         {
-            AudioListener.volume = (float) (1f - ((timeline.time - (timeline.duration - audioFadeDuration)) / audioFadeDuration));
+            float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
+
+            AudioListener.volume = fade;
+            fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
         }
 	}
 
@@ -98,8 +125,12 @@ public class PlaybackControl : MonoBehaviour
         if (pause)
         {
             targetTimeScale = 0f;
-            pauseOverlay.SetBool("paused", true);
-            pauseOverlay.gameObject.SetActive(true);
+
+            if (pauseOverlay)
+            {
+                pauseOverlay.SetBool("paused", true);
+                pauseOverlay.gameObject.SetActive(true);
+            }
         }
     }
 }

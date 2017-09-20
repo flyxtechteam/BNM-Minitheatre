@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class AsyncSceneLoader : MonoBehaviour
 {
-    [SerializeField]
-    string levelToLoad;
+    public string levelToLoad;
 
     [SerializeField]
     PlayableDirector timeline;
@@ -50,10 +49,13 @@ public class AsyncSceneLoader : MonoBehaviour
             }
             // If neither are assigned, ActivateScene() must be called externally
         }
+
+        
     }
 
     public void ActivateScene()
-    {
+    {   
+        // Activate scene
         async.allowSceneActivation = true;
     }
 
