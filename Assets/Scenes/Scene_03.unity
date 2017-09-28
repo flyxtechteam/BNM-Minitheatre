@@ -3029,9 +3029,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd717216e87911349855efbf9ee30a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeBlack: {fileID: 0}
-  fadeWhite: {fileID: 0}
-  fadeRate: 0.2
 --- !u!95 &426592047
 Animator:
   serializedVersion: 3
@@ -3101,7 +3098,8 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.24794336, z: 0, w: -0.96877456}
   m_LocalPosition: {x: 119.19, y: 0, z: -49.774}
   m_LocalScale: {x: 0.7, y: 2, z: 0.7}
-  m_Children: []
+  m_Children:
+  - {fileID: 948070214}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 359.7346, z: 0}
@@ -8959,6 +8957,11 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 589972ed2dd70ab4abe52ca382b7cba2, type: 3}
   m_PrefabInternal: {fileID: 1440005561}
+--- !u!4 &948070214 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1262037252}
 --- !u!4 &958570879 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a993b617b84918e4aa566b208b48dae6, type: 3}
@@ -10676,6 +10679,54 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f75f232634166cc459a69e7fd7a30880, type: 2}
   m_PrefabInternal: {fileID: 1240024430}
+--- !u!1001 &1262037252
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 426592050}
+    m_Modifications:
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114132684626364446, guid: d14d058feb1e96e4a879b6d49ba5c66c,
+        type: 2}
+      propertyPath: profile
+      value: 
+      objectReference: {fileID: 11400000, guid: adff31af0f469db40a4d906162e803db,
+        type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1315155611 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a993b617b84918e4aa566b208b48dae6, type: 3}
@@ -11712,15 +11763,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VOAudioClipSets:
-  - {fileID: 8300000, guid: 72b9ae40e925bba408e2a75c24e46139, type: 3}
+  - {fileID: 8300000, guid: 5b894a6f4f736cb48acf919601ca4642, type: 3}
   - {fileID: 8300000, guid: a7ebc5877e367064ba8a33484efd63ee, type: 3}
-  - {fileID: 8300000, guid: 5cdb863f75076ba4fbb03844baabe642, type: 3}
+  - {fileID: 8300000, guid: 8f5068924b95dcc49961ea8d552c4e10, type: 3}
   - {fileID: 8300000, guid: 4c895bc5ccb27864189747b4606317d5, type: 3}
-  - {fileID: 8300000, guid: ad092ca1cb718b74f84377507027a431, type: 3}
+  - {fileID: 8300000, guid: 1414011147b3d674983f39227c2d67a1, type: 3}
   - {fileID: 8300000, guid: fc0ee8c5891b04d41991cbbe7ade3be6, type: 3}
-  - {fileID: 8300000, guid: 037629ef4ac8e354b9786a6e8d668091, type: 3}
+  - {fileID: 8300000, guid: 4964737ecc78bae4e8e8d45942e6b977, type: 3}
   - {fileID: 8300000, guid: e0379dfb9769e0941992358a64d4e1cb, type: 3}
-  - {fileID: 8300000, guid: 0f92ef6003aef904180e648eaa5ec83b, type: 3}
+  - {fileID: 8300000, guid: e0a2cc7b28c39c4458b2f0a27d065b23, type: 3}
   - {fileID: 8300000, guid: 45a85903985697140bbb1bf57202cc67, type: 3}
   mixerGroup: {fileID: 243730674697846652, guid: 96ea7c89f61b86f4e987d3cbb5420bbb,
     type: 2}
