@@ -24,40 +24,56 @@ public class VOHandler : MonoBehaviour
     // Counter used to cycle through VO sets each time audio is played
     int currentSet = 0;
 
-    void Awake()
+    /*void Awake()
     {
         source = gameObject.AddComponent<AudioSource>();
         source.outputAudioMixerGroup = mixerGroup;
+
+        init = true;
     }
 
     void Start()
     {
         init = true;
-    }
+    }*/
 
     void OnEnable()
     {
         if (init)
         {
-            if (!LanguageOverrideToMalay)
-            {
-                source.clip = VOAudioClipSets[(currentSet * 2) + GlobalData.language];
-            }
-            else
-            {
-                source.clip = VOAudioClipSets[(currentSet * 2) + 1];
-            }
-            
-            source.Play();
+            PlayNextVO();
+        }
+        else
+        {
+            source = gameObject.AddComponent<AudioSource>();
+            source.outputAudioMixerGroup = mixerGroup;
 
-            if (currentSet < VOAudioClipSets.Length - 1)
-            {
-                currentSet++;
-            }
-            else
-            {
-                currentSet = 0;
-            }
+            init = true;
+
+            PlayNextVO();
+        }
+    }
+
+    void PlayNextVO()
+    {
+        if (!LanguageOverrideToMalay)
+        {
+            source.clip = VOAudioClipSets[(currentSet * 2) + GlobalData.language];
+        }
+        else
+        {
+            source.clip = VOAudioClipSets[(currentSet * 2) + 1];
+        }
+
+        source.Play();
+
+        if (currentSet < VOAudioClipSets.Length - 1)
+        {
+            currentSet++;
+        }
+        else
+        {
+            currentSet = 0;
         }
     }
 }
