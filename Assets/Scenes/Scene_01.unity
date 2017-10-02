@@ -9287,7 +9287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1004911468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13868,6 +13868,25 @@ Prefab:
     - target: {fileID: 4909819948667014, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1079386807909390, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 223222008555325590, guid: d14d058feb1e96e4a879b6d49ba5c66c,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 223753999246435880, guid: d14d058feb1e96e4a879b6d49ba5c66c,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114739898487720070, guid: d14d058feb1e96e4a879b6d49ba5c66c,
+        type: 2}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d14d058feb1e96e4a879b6d49ba5c66c, type: 2}

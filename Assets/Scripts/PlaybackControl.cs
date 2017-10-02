@@ -13,14 +13,16 @@ public class PlaybackControl : MonoBehaviour
 
     public PlayableDirector timeline;
 
-    [SerializeField]
-    float pauseDelay = 5f;
+    [SerializeField] float pauseDelay = 5f;
+    [SerializeField] bool autoCycle = false;
 
     bool pause = false;
     float scaleRate = 0.05f;
     float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
     float fadeDuration = 2f;
+
+    
 
     // For debug only
     [HideInInspector]
@@ -40,6 +42,10 @@ public class PlaybackControl : MonoBehaviour
 
     void Update ()
 	{
+        if (!autoCycle)
+        {
+
+        }
         // Update timeleft (for debug)
         if (timeLeft > 0f)
         {
@@ -50,14 +56,14 @@ public class PlaybackControl : MonoBehaviour
             timeLeft = 0f;
         }
 
-		if ((!Input.GetKey(GlobalData.key_cycle)) && (!pause))
+		if ((!Input.GetKey(GlobalData.key_cycle)) && (!pause) && ((!autoCycle) && (Application.isEditor)))
 		{
             StartCoroutine("DelayPause");
             timeLeft = pauseDelay;
             pause = true;
         }
 		
-		if (Input.GetKey(GlobalData.key_cycle))
+		if ((Input.GetKey(GlobalData.key_cycle)) || ((autoCycle) && (Application.isEditor)))
 		{ 
             if (pause)
             {
@@ -112,7 +118,7 @@ public class PlaybackControl : MonoBehaviour
         else if (timeline.time >= timeline.duration - fadeDuration)
         {
             float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
-
+            
             AudioListener.volume = fade;
             fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
         }

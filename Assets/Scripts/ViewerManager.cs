@@ -15,7 +15,7 @@ public class ViewerManager : MonoBehaviour {
     // Set the camera's current tracking object to this object
     void Start ()
     {
-        GameObject camera = GameObject.FindGameObjectWithTag("camera");
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
 
         if (camera)
         {

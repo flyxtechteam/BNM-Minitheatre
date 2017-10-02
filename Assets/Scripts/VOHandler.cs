@@ -20,37 +20,30 @@ public class VOHandler : MonoBehaviour
     AudioSource source;
 
     bool init = false;
+    bool donePlayback = false;
 
     // Counter used to cycle through VO sets each time audio is played
     int currentSet = 0;
 
-    /*void Awake()
-    {
-        source = gameObject.AddComponent<AudioSource>();
-        source.outputAudioMixerGroup = mixerGroup;
-
-        init = true;
-    }
-
-    void Start()
-    {
-        init = true;
-    }*/
-
     void OnEnable()
     {
-        if (init)
+        if (!donePlayback)
         {
-            PlayNextVO();
-        }
-        else
-        {
-            source = gameObject.AddComponent<AudioSource>();
-            source.outputAudioMixerGroup = mixerGroup;
+            if (init)
+            {
+                PlayNextVO();
+            }
+            else
+            {
+                // First time initialization
+                // Adds AudioSource and assigns VO mixer group
+                source = gameObject.AddComponent<AudioSource>();
+                source.outputAudioMixerGroup = mixerGroup;
 
-            init = true;
+                init = true;
 
-            PlayNextVO();
+                PlayNextVO();
+            }
         }
     }
 
@@ -74,6 +67,7 @@ public class VOHandler : MonoBehaviour
         else
         {
             currentSet = 0;
+            donePlayback = true;
         }
     }
 }
