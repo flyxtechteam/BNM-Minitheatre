@@ -6,10 +6,29 @@ ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Plane
+    100004: Point.000
+    100006: Point.001
+    100008: Point.002
+    100010: Point.003
+    100012: Point.004
     400000: //RootNode
+    400002: Plane
+    400004: Point.000
+    400006: Point.001
+    400008: Point.002
+    400010: Point.003
+    400012: Point.004
     2300000: //RootNode
+    2300002: Plane
     3300000: //RootNode
+    3300002: Plane
     4300000: Plane
+    10800000: Point.000
+    10800002: Point.001
+    10800004: Point.002
+    10800006: Point.003
+    10800008: Point.004
   materials:
     importMaterials: 1
     materialName: 0
@@ -37,7 +56,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.01
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
