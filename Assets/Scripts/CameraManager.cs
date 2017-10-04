@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Klak.Spout;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.PostProcessing;
@@ -9,6 +10,16 @@ public class CameraManager : MonoBehaviour
 
     [SerializeField] Vector3 offsetPosition;
     [SerializeField] Vector3 offsetRotation;
+
+    private static CameraManager m_instance = null;
+
+    public static CameraManager Instance
+    {
+        get
+        {
+            return m_instance;
+        }
+    }
     
     // Updates viewer object and updates post processing profile, sets playbackcontrol and assigns fade colours
     public void SetViewer(GameObject target, PostProcessingProfile profile = null, FadeColor fadeIn = FadeColor.white, FadeColor fadeOut = FadeColor.white)
@@ -27,9 +38,21 @@ public class CameraManager : MonoBehaviour
         Debug.Log("Now tracking " + target.name);
     }
 
-    void Start()
+    void Awake()
     {
-        DontDestroyOnLoad(transform.gameObject);
+        if (m_instance == null)
+        {
+            m_instance = this;
+
+            gameObject.AddComponent<SpoutSender>();
+
+            DontDestroyOnLoad(transform.gameObject);
+        }
+
+        else
+        {
+            DestroyImmediate(gameObject);
+        }
     }
 
     void Update()

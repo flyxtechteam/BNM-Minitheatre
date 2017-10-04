@@ -15,13 +15,15 @@ public class ViewerManager : MonoBehaviour {
     // Set the camera's current tracking object to this object
     void Start ()
     {
-        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
+        //GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
 
-        if (camera)
-        {
-            CameraManager camManager = camera.GetComponent<CameraManager>();
-            camManager.SetViewer(transform.gameObject, scenePostProcessing, fadeInColor, fadeOutColor);
-        }
+        //if (camera)
+        //{
+        //    CameraManager camManager = camera.GetComponent<CameraManager>();
+        //    camManager.SetViewer(transform.gameObject, scenePostProcessing, fadeInColor, fadeOutColor);
+        //}
+
+        CameraManager.Instance.SetViewer(transform.gameObject, scenePostProcessing, fadeInColor, fadeOutColor);
 	}
 }
 

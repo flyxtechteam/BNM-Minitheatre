@@ -56,14 +56,14 @@ public class PlaybackControl : MonoBehaviour
             timeLeft = 0f;
         }
 
-		if ((!Input.GetKey(GlobalData.key_cycle)) && (!pause) && ((!autoCycle) && (Application.isEditor)))
+		if (timeline != null && (!Input.GetKey(GlobalData.key_cycle)) && (!pause) && ((!autoCycle) && (Application.isEditor)))
 		{
             StartCoroutine("DelayPause");
             timeLeft = pauseDelay;
             pause = true;
         }
 		
-		if ((Input.GetKey(GlobalData.key_cycle)) || ((autoCycle) && (Application.isEditor)))
+		if (timeline != null && (Input.GetKey(GlobalData.key_cycle)) || ((autoCycle) && (Application.isEditor)))
 		{ 
             if (pause)
             {
@@ -105,22 +105,30 @@ public class PlaybackControl : MonoBehaviour
             }
         }
 
-        // Fade audio and visuals as timeline starts off and approaches end
-        // At start of scene
-        if (timeline.time < fadeDuration)
+        if (timeline != null)
         {
-            float fade = (float)(timeline.time / fadeDuration);
+            // Fade audio and visuals as timeline starts off and approaches end
+            // At start of scene
+            if (timeline.time < fadeDuration)
+            {
+                float fade = (float)(timeline.time / fadeDuration);
 
-            AudioListener.volume = fade;
-            fadeOverlay.color = new Color((float)fadeColorIn, (float)fadeColorIn, (float)fadeColorIn, 1 - fade);
+                AudioListener.volume = fade;
+                fadeOverlay.color = new Color((float)fadeColorIn, (float)fadeColorIn, (float)fadeColorIn, 1 - fade);
+            }
+            // At end of scene
+            else if (timeline.time >= timeline.duration - fadeDuration)
+            {
+                float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
+
+                AudioListener.volume = fade;
+                fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
+            }
         }
-        // At end of scene
-        else if (timeline.time >= timeline.duration - fadeDuration)
+
+        else
         {
-            float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
-            
-            AudioListener.volume = fade;
-            fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
+            fadeOverlay.color = Color.clear;
         }
 	}
 
