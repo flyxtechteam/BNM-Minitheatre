@@ -21,14 +21,12 @@ public class PlaybackControl : MonoBehaviour
     float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
     float fadeDuration = 2f;
-
     
-
     // For debug only
     [HideInInspector]
     public float timeLeft = 0f;
 
-    /*void InitFadeOverlay(FadeColor fadeType)
+    public void InitFadeOverlay(FadeColor fadeType)
     {
         if (fadeType == FadeColor.white)
         {
@@ -38,7 +36,7 @@ public class PlaybackControl : MonoBehaviour
         {
             fadeOverlay.color = Color.black;
         }
-    }*/
+    }
 
     void Update ()
 	{
@@ -56,14 +54,60 @@ public class PlaybackControl : MonoBehaviour
             timeLeft = 0f;
         }
 
-		if (timeline != null && (!Input.GetKey(GlobalData.key_cycle)) && (!pause) && ((!autoCycle) && (Application.isEditor)))
+        if (timeline != null)
+        {
+            if (!pause)
+            {
+                if (!Application.isEditor || !autoCycle)
+                {
+                    if (!Input.GetKeyDown(GlobalData.key_cycle))
+                    {
+                        StartCoroutine("DelayPause");
+                        timeLeft = pauseDelay;
+                        pause = true;
+                    }
+                }
+            }
+
+            else
+            {
+                if ((Application.isEditor && autoCycle) || Input.GetKey(GlobalData.key_cycle))
+                {
+                    StopCoroutine("DelayPause");
+                    targetTimeScale = 1f;
+                    timeLeft = 0f;
+                    pause = false;
+
+                    if (pauseOverlay)
+                    {
+                        pauseOverlay.SetBool("paused", false);
+                    }
+                }
+            }
+        }
+
+        else
+        {
+            StopCoroutine("DelayPause");
+            targetTimeScale = 1f;
+            timeLeft = 0f;
+            pause = false;
+
+            if (pauseOverlay)
+            {
+                pauseOverlay.SetBool("paused", false);
+            }
+        }
+
+        /* original code
+		if ((timeline != null && (!Input.GetKey(GlobalData.key_cycle)) && (!pause)) || ((!autoCycle) && (Application.isEditor)))
 		{
             StartCoroutine("DelayPause");
             timeLeft = pauseDelay;
             pause = true;
         }
 		
-		if (timeline != null && (Input.GetKey(GlobalData.key_cycle)) || ((autoCycle) && (Application.isEditor)))
+		if ((timeline != null && (Input.GetKey(GlobalData.key_cycle))) || ((autoCycle) && (Application.isEditor)))
 		{ 
             if (pause)
             {
@@ -78,6 +122,7 @@ public class PlaybackControl : MonoBehaviour
                 }                
             }
         }
+        */
 
         if (targetTimeScale == 1f)
         {
@@ -124,11 +169,6 @@ public class PlaybackControl : MonoBehaviour
                 AudioListener.volume = fade;
                 fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
             }
-        }
-
-        else
-        {
-            fadeOverlay.color = Color.clear;
         }
 	}
 

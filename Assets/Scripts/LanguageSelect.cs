@@ -46,6 +46,8 @@ public class LanguageSelect : MonoBehaviour {
     {
         fillLeft.speed = 0f;
         fillRight.speed = 0f;
+
+        sceneTransition.SetBool("out", false);
     }
 
     void Update()
@@ -210,15 +212,31 @@ public class LanguageSelect : MonoBehaviour {
 
     IEnumerator CueThankYouFadeIn()
     {
+        thankYouUIVisible = true;
+
+        while (selectionUI.alpha > 0f)
+        {
+            selectionUI.alpha -= Time.deltaTime;
+
+            yield return null;
+        }
+        
         yield return new WaitForSeconds(UIFadeTime);
 
-        thankYouUIVisible = true;
+        while (thankYouUI.alpha < 1f)
+        {
+            thankYouUI.alpha += Time.deltaTime;
+
+            yield return null;
+        }
     }
 
     IEnumerator CueSceneChange()
     {
         yield return new WaitForSeconds(confirmedScreenTime);
 
-        sceneTransition.enabled = true;
+        //sceneTransition.enabled = true;
+
+        sceneTransition.SetBool("out", true);
     }
 }

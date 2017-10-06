@@ -6,6 +6,7 @@ TagManager:
   tags:
   - viewer
   - overlay
+  - camera
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - WorldSpaceUI
   - 
   - 
   - 

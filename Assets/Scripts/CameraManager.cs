@@ -11,6 +11,8 @@ public class CameraManager : MonoBehaviour
     [SerializeField] Vector3 offsetPosition;
     [SerializeField] Vector3 offsetRotation;
 
+    [SerializeField] Camera spoutCamera;
+
     private static CameraManager m_instance = null;
 
     public static CameraManager Instance
@@ -44,7 +46,11 @@ public class CameraManager : MonoBehaviour
         {
             m_instance = this;
 
-            gameObject.AddComponent<SpoutSender>();
+            spoutCamera.gameObject.AddComponent<SpoutSender>();
+
+            PlaybackControl playback = gameObject.GetComponent<PlaybackControl>();
+
+            playback.InitFadeOverlay(FadeColor.white);
 
             DontDestroyOnLoad(transform.gameObject);
         }

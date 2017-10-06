@@ -42,14 +42,13 @@ public class AsyncSceneLoader : MonoBehaviour
             // Besides playable, also accept Animator class for activating scene after a scene transition
             else if (sceneTransition != null)
             {
-                if (sceneTransition.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
+                if (sceneTransition.GetBool("out") && sceneTransition.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
                 {
                     ActivateScene();
                 }
             }
             // If neither are assigned, ActivateScene() must be called externally
         }
-
         
     }
 
