@@ -1820,7 +1820,7 @@ MonoBehaviour:
   leftArrow: {fileID: 239344584}
   rightArrow: {fileID: 893330647}
   screenSaver: {fileID: 1558290843}
-  screenSaverDelay: 15
+  screenSaverDelay: 10
 --- !u!4 &613473605
 Transform:
   m_ObjectHideFlags: 0
@@ -4142,7 +4142,7 @@ Prefab:
     - target: {fileID: 114342872743777628, guid: d14d058feb1e96e4a879b6d49ba5c66c,
         type: 2}
       propertyPath: timeOutDelay
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114342872743777628, guid: d14d058feb1e96e4a879b6d49ba5c66c,
         type: 2}

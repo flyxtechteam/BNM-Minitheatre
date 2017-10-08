@@ -65,7 +65,7 @@ public class LanguageSelect : MonoBehaviour {
         }
 
         GlobalData.didTimeOut = false;
-        seatedStateChangeTime = float.MaxValue;
+        seatedStateChangeTime = Time.time;
 
         loadCount++;
     }
