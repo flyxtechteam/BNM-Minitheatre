@@ -42,12 +42,32 @@ public class LanguageSelect : MonoBehaviour {
 
     int language = 0; //0 - English, 1 - Malay
 
+    bool isSeated = false;
+    float seatedStateChangeTime = 0f;
+
+    [Header("Screen Saver Properties")]
+    [SerializeField]
+    private SlideShowController screenSaver;
+
+    [SerializeField]
+    private float screenSaverDelay = 5f;
+
+    private static int loadCount = 0;
+
     void Start()
     {
         fillLeft.speed = 0f;
         fillRight.speed = 0f;
+        
+        if (GlobalData.didTimeOut || loadCount == 0)
+        {
+            screenSaver.Activate(true);
+        }
 
-        sceneTransition.SetBool("out", false);
+        GlobalData.didTimeOut = false;
+        seatedStateChangeTime = float.MaxValue;
+
+        loadCount++;
     }
 
     void Update()
@@ -150,9 +170,27 @@ public class LanguageSelect : MonoBehaviour {
         */
         } // MODE 1: Press and hold to confirm
 
+        bool currentSeated = Input.GetKey(GlobalData.key_seat);
+
+        bool didSeatedStateChanged = currentSeated != isSeated;
+
+        if (didSeatedStateChanged)
+        {
+            seatedStateChangeTime = Time.time;
+        }
+
+        isSeated = currentSeated;
+
+        if (isSeated)
+        {
+            screenSaver.Deactivate();
+        }
+
         {
             if (MODE2_selected)
             {
+                screenSaver.Deactivate();
+
                 AutoFillSelection();
             }
             else
@@ -166,6 +204,14 @@ public class LanguageSelect : MonoBehaviour {
                 {
                     GlobalData.language = 1;
                     MODE2_selected = true;
+                }
+
+                if (!MODE2_selected && !blockInput && !isSeated)
+                {
+                    if (Time.time >= seatedStateChangeTime + screenSaverDelay)
+                    {
+                        screenSaver.Activate();
+                    }
                 }
             }
         } // MODE 2: Press once to confirm selection

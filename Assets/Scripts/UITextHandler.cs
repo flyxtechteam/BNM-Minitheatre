@@ -12,7 +12,7 @@ public class UITextHandler : MonoBehaviour
     [SerializeField]
     bool initOnStart = true;
 
-    void Start()
+    void OnEnable()
     {
         if (initOnStart)
         {

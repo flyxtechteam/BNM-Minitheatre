@@ -10,4 +10,6 @@ public static class GlobalData
 
     // 0 - English, 1 - Malay
     public static int language = 0;
+
+    public static bool didTimeOut = false;
 }

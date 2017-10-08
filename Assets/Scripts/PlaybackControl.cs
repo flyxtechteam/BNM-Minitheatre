@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 
 public class PlaybackControl : MonoBehaviour
 {
@@ -16,11 +17,16 @@ public class PlaybackControl : MonoBehaviour
     [SerializeField] float pauseDelay = 5f;
     [SerializeField] bool autoCycle = false;
 
+    [SerializeField]
+    private float timeOutDelay = 15f;
+
     bool pause = false;
     float scaleRate = 0.05f;
     float targetTimeScale = 1f;
     float LerpThreshold = 0.05f;
     float fadeDuration = 2f;
+
+    bool hasTimedOut = false;
     
     // For debug only
     [HideInInspector]
@@ -40,6 +46,11 @@ public class PlaybackControl : MonoBehaviour
 
     void Update ()
 	{
+        if (hasTimedOut)
+        {
+            return;
+        }
+
         if (!autoCycle)
         {
 
@@ -185,6 +196,52 @@ public class PlaybackControl : MonoBehaviour
                 pauseOverlay.SetBool("paused", true);
                 pauseOverlay.gameObject.SetActive(true);
             }
+
+            float timeOutEndTime = Time.unscaledTime + timeOutDelay;
+
+            while (Time.unscaledTime < timeOutEndTime)
+            {
+                yield return null;
+            }
+
+            hasTimedOut = true;
+            GlobalData.didTimeOut = true;
+
+            if (pauseOverlay)
+            {
+                pauseOverlay.SetBool("paused", false);
+            }
+            
+            fadeColorIn = FadeColor.white;
+            fadeColorOut = FadeColor.white;
+
+            float fadeStartTime = Time.unscaledTime;
+            float fadeEndTime = fadeStartTime + fadeDuration;
+
+            while (Time.unscaledTime < fadeEndTime)
+            {
+                float t = (Time.unscaledTime - fadeStartTime) / fadeDuration;
+
+                AudioListener.volume = Mathf.Min(AudioListener.volume, 1 - t);
+                fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, t);
+
+                yield return null;
+            }
+
+            string currentScene = SceneManager.GetActiveScene().name;
+            SceneManager.UnloadSceneAsync(currentScene);
+
+            SceneManager.LoadScene("LanguageSelectv2");
+
+            pauseOverlay.gameObject.SetActive(false);
+
+            hasTimedOut = false;
+
+            targetTimeScale = 1f;
+            timeLeft = 0f;
+            pause = false;
+
+            Time.timeScale = 1f;
         }
     }
 }
