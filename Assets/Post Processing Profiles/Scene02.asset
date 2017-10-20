@@ -88,7 +88,7 @@ MonoBehaviour:
       lowPercent: 63.227417
       highPercent: 99
       minLuminance: -2.79
-      maxLuminance: -1.2
+      maxLuminance: -1.3
       keyValue: 0.38
       dynamicKeyValue: 0
       adaptationType: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     m_Settings:
       bloom:
         intensity: 0.06
-        threshold: 0.8
+        threshold: 0.85
         softKnee: 0.594
         radius: 7
         antiFlicker: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
   userLut:
     m_Enabled: 1
     m_Settings:
-      lut: {fileID: 2800000, guid: 85552b24e518a8043b37364b377a7648, type: 3}
+      lut: {fileID: 2800000, guid: 04f3021e7abe4b94c8b67282bb5355e5, type: 3}
       contribution: 1
   chromaticAberration:
     m_Enabled: 0

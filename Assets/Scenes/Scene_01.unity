@@ -14706,8 +14706,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scenePostProcessing: {fileID: 11400000, guid: cbfb427b35f93b740a2f956d676df943,
     type: 2}
-  fadeInColor: 1
-  fadeOutColor: 1
+  fadeInColor: 0
+  fadeOutColor: 0
 --- !u!65 &1771910083
 BoxCollider:
   m_ObjectHideFlags: 0
