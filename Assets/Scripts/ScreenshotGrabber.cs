@@ -6,12 +6,14 @@ public class ScreenshotGrabber : MonoBehaviour {
 
     int screenshotCounter = 0;
 
+    [SerializeField] int superSizeFactor = 0;
+
     // Update is called once per frame
     void Update ()
     {
         if (Input.GetKeyDown(KeyCode.G))
         {
-            ScreenCapture.CaptureScreenshot("Screenshot_" + screenshotCounter.ToString() + ".png");
+            ScreenCapture.CaptureScreenshot("Screenshot_" + screenshotCounter.ToString() + ".png", superSizeFactor);
 
             screenshotCounter++;
         }

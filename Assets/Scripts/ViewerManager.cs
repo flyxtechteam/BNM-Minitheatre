@@ -9,8 +9,6 @@ public class ViewerManager : MonoBehaviour {
     // also stores scene-specific information - e.g. post processing profile setting, fade in/out type
 
     [SerializeField] PostProcessingProfile scenePostProcessing;
-    [SerializeField] FadeColor fadeInColor;
-    [SerializeField] FadeColor fadeOutColor;
 
     // Set the camera's current tracking object to this object
     void Start ()
@@ -23,8 +21,6 @@ public class ViewerManager : MonoBehaviour {
         //    camManager.SetViewer(transform.gameObject, scenePostProcessing, fadeInColor, fadeOutColor);
         //}
 
-        CameraManager.Instance.SetViewer(transform.gameObject, scenePostProcessing, fadeInColor, fadeOutColor);
+        CameraManager.Instance.SetViewer(transform.gameObject, scenePostProcessing);
 	}
 }
-
-public enum FadeColor {white = 1, black = 0}

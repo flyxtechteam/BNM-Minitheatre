@@ -9,9 +9,6 @@ public class PlaybackControl : MonoBehaviour
     [SerializeField] Animator pauseOverlay;
     [SerializeField] UnityEngine.UI.Image fadeOverlay;
 
-    public FadeColor fadeColorIn;
-    public FadeColor fadeColorOut;
-
     public PlayableDirector timeline;
 
     [SerializeField] float pauseDelay = 5f;
@@ -31,18 +28,6 @@ public class PlaybackControl : MonoBehaviour
     // For debug only
     [HideInInspector]
     public float timeLeft = 0f;
-
-    public void InitFadeOverlay(FadeColor fadeType)
-    {
-        if (fadeType == FadeColor.white)
-        {
-            fadeOverlay.color = Color.white;
-        }
-        else
-        {
-            fadeOverlay.color = Color.black;
-        }
-    }
 
     void Update ()
 	{
@@ -170,7 +155,7 @@ public class PlaybackControl : MonoBehaviour
                 float fade = (float)(timeline.time / fadeDuration);
 
                 AudioListener.volume = fade;
-                fadeOverlay.color = new Color((float)fadeColorIn, (float)fadeColorIn, (float)fadeColorIn, 1 - fade);
+                fadeOverlay.color = new Color(fadeOverlay.color.r, fadeOverlay.color.g, fadeOverlay.color.b, 1 - fade);
             }
             // At end of scene
             else if (timeline.time >= timeline.duration - fadeDuration)
@@ -178,7 +163,7 @@ public class PlaybackControl : MonoBehaviour
                 float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
 
                 AudioListener.volume = fade;
-                fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, 1 - fade);
+                fadeOverlay.color = new Color(fadeOverlay.color.r, fadeOverlay.color.g, fadeOverlay.color.b, 1 - fade);
             }
         }
 	}
@@ -211,9 +196,6 @@ public class PlaybackControl : MonoBehaviour
             {
                 pauseOverlay.SetBool("paused", false);
             }
-            
-            fadeColorIn = FadeColor.white;
-            fadeColorOut = FadeColor.white;
 
             float fadeStartTime = Time.unscaledTime;
             float fadeEndTime = fadeStartTime + fadeDuration;
@@ -223,7 +205,7 @@ public class PlaybackControl : MonoBehaviour
                 float t = (Time.unscaledTime - fadeStartTime) / fadeDuration;
 
                 AudioListener.volume = Mathf.Min(AudioListener.volume, 1 - t);
-                fadeOverlay.color = new Color((float)fadeColorOut, (float)fadeColorOut, (float)fadeColorOut, t);
+                fadeOverlay.color = new Color(fadeOverlay.color.r, fadeOverlay.color.g, fadeOverlay.color.b, t);
 
                 yield return null;
             }

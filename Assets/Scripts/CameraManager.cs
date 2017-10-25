@@ -24,7 +24,7 @@ public class CameraManager : MonoBehaviour
     }
     
     // Updates viewer object and updates post processing profile, sets playbackcontrol and assigns fade colours
-    public void SetViewer(GameObject target, PostProcessingProfile profile = null, FadeColor fadeIn = FadeColor.white, FadeColor fadeOut = FadeColor.white)
+    public void SetViewer(GameObject target, PostProcessingProfile profile = null)
     {
         viewer = target;
 
@@ -33,8 +33,6 @@ public class CameraManager : MonoBehaviour
 
         PlaybackControl playback = gameObject.GetComponent<PlaybackControl>();
 
-        playback.fadeColorIn = fadeIn;
-        playback.fadeColorOut = fadeOut;
         playback.timeline = viewer.GetComponent<UnityEngine.Playables.PlayableDirector>();
 
         Debug.Log("Now tracking " + target.name);
@@ -49,8 +47,6 @@ public class CameraManager : MonoBehaviour
             spoutCamera.gameObject.AddComponent<SpoutSender>();
 
             PlaybackControl playback = gameObject.GetComponent<PlaybackControl>();
-
-            playback.InitFadeOverlay(FadeColor.white);
 
             DontDestroyOnLoad(transform.gameObject);
         }
