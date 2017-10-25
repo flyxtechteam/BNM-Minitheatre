@@ -12452,12 +12452,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   VOAudioClipSets:
-  - {fileID: 8300000, guid: 5b894a6f4f736cb48acf919601ca4642, type: 3}
+  - {fileID: 8300000, guid: d8ed985bc55d9404f8344a5119aeb869, type: 3}
   - {fileID: 8300000, guid: a7ebc5877e367064ba8a33484efd63ee, type: 3}
-  - {fileID: 8300000, guid: 8f5068924b95dcc49961ea8d552c4e10, type: 3}
+  - {fileID: 8300000, guid: c5de2397d5183cb469ce6790b4ec5e8f, type: 3}
   - {fileID: 8300000, guid: 4c895bc5ccb27864189747b4606317d5, type: 3}
   - {fileID: 8300000, guid: 1414011147b3d674983f39227c2d67a1, type: 3}
-  - {fileID: 8300000, guid: fc0ee8c5891b04d41991cbbe7ade3be6, type: 3}
+  - {fileID: 8300000, guid: 6bf002f5ce6b136429bd00743fd22f36, type: 3}
   - {fileID: 8300000, guid: 4964737ecc78bae4e8e8d45942e6b977, type: 3}
   - {fileID: 8300000, guid: e0379dfb9769e0941992358a64d4e1cb, type: 3}
   - {fileID: 8300000, guid: e0a2cc7b28c39c4458b2f0a27d065b23, type: 3}
