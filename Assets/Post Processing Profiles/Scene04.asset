@@ -120,7 +120,7 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: -0.3
+        postExposure: -1.2
         temperature: 0
         tint: 0
         hueShift: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
           m_ZeroValue: 0.5
           m_Range: 1
         e_CurrentEditingCurve: 0
-        e_CurveY: 1
+        e_CurveY: 0
         e_CurveR: 1
         e_CurveG: 0
         e_CurveB: 0
