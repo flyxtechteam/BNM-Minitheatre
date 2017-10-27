@@ -44,6 +44,7 @@ public class LanguageSelect : MonoBehaviour {
 
     bool isSeated = false;
     float seatedStateChangeTime = 0f;
+    float brakeInputDelay = 1f;
 
     [Header("Screen Saver Properties")]
     [SerializeField]
@@ -195,15 +196,35 @@ public class LanguageSelect : MonoBehaviour {
             }
             else
             {
-                if ((Input.GetKey(GlobalData.key_left)) && (!blockInput))
+                if ((Input.GetKeyDown(GlobalData.key_left)) && (!blockInput))
                 {
-                    GlobalData.language = 0;
-                    MODE2_selected = true;
+                    if (screenSaver.isActive)
+                    {
+                        screenSaver.Deactivate();
+                        seatedStateChangeTime = Time.time;
+
+                        StartCoroutine(BlockBrakeInput());
+                    }
+                    else
+                    {
+                        GlobalData.language = 0;
+                        MODE2_selected = true;
+                    }
                 }
-                else if ((Input.GetKey(GlobalData.key_right)) && (!blockInput))
+                else if ((Input.GetKeyDown(GlobalData.key_right)) && (!blockInput))
                 {
-                    GlobalData.language = 1;
-                    MODE2_selected = true;
+                    if (screenSaver.isActive)
+                    {
+                        screenSaver.Deactivate();
+                        seatedStateChangeTime = Time.time;
+
+                        StartCoroutine(BlockBrakeInput());
+                    }
+                    else
+                    {
+                        GlobalData.language = 1;
+                        MODE2_selected = true;
+                    }
                 }
 
                 if (!MODE2_selected && !blockInput && !isSeated)
@@ -254,6 +275,15 @@ public class LanguageSelect : MonoBehaviour {
 
         leftArrow.SetActive(false);
         rightArrow.SetActive(false);
+    }
+
+    IEnumerator BlockBrakeInput()
+    {
+        blockInput = true;
+
+        yield return new WaitForSeconds(brakeInputDelay);
+
+        blockInput = false;        
     }
 
     IEnumerator CueThankYouFadeIn()

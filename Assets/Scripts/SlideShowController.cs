@@ -16,7 +16,7 @@ public class SlideShowController : MonoBehaviour {
     [SerializeField]
     private float crossfadeDuration = 1f;
 
-    private bool isActive = false;
+    public bool isActive = false;
     private int activeSlideIndex = 0;
     private float lastSlideChangeTime = 0f;
 
