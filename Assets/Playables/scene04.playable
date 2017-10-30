@@ -256,24 +256,24 @@ AnimationClip:
         time: 33.15
         value: {x: -403.26312, y: 46.99, z: -203.37253}
         inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 3.3393643, y: 0.0540968, z: 2.1541014}
+        outSlope: {x: 3.319673, y: 0.0540968, z: 2.114756}
         tangentMode: 0
       - serializedVersion: 2
         time: 35.183334
-        value: {x: -396.47308, y: 47.1, z: -198.99252}
-        inSlope: {x: 2.6667268, y: 0.03587269, z: 2.9564614}
-        outSlope: {x: 2.6667268, y: 0.03587269, z: 2.9564614}
+        value: {x: -396.51312, y: 47.1, z: -199.07253}
+        inSlope: {x: 2.5598354, y: 0.0976371, z: 2.8103204}
+        outSlope: {x: 2.5598354, y: 0.0976371, z: 2.8103204}
         tangentMode: 0
       - serializedVersion: 2
         time: 36.883335
-        value: {x: -393.08313, y: 47.13, z: -192.60252}
-        inSlope: {x: 1.4495105, y: -0.015766444, z: 4.313836}
-        outSlope: {x: 1.4495105, y: -0.015766444, z: 4.313836}
+        value: {x: -393.45312, y: 47.34, z: -193.11252}
+        inSlope: {x: 1.3573725, y: 0.028784923, z: 4.229171}
+        outSlope: {x: 1.3573725, y: 0.028784923, z: 4.229171}
         tangentMode: 0
       - serializedVersion: 2
         time: 38.916668
-        value: {x: -391.2431, y: 47.03, z: -182.70253}
-        inSlope: {x: 0.9049315, y: -0.049181465, z: 4.8688507}
+        value: {x: -391.59314, y: 47.17, z: -183.04253}
+        inSlope: {x: 0.9147471, y: -0.083607554, z: 4.9524565}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
@@ -382,24 +382,24 @@ AnimationClip:
         time: 33.15
         value: -403.26312
         inSlope: 0
-        outSlope: 3.3393643
+        outSlope: 3.319673
         tangentMode: 69
       - serializedVersion: 2
         time: 35.183334
-        value: -396.47308
-        inSlope: 2.6667268
-        outSlope: 2.6667268
+        value: -396.51312
+        inSlope: 2.5598354
+        outSlope: 2.5598354
         tangentMode: 34
       - serializedVersion: 2
         time: 36.883335
-        value: -393.08313
-        inSlope: 1.4495105
-        outSlope: 1.4495105
+        value: -393.45312
+        inSlope: 1.3573725
+        outSlope: 1.3573725
         tangentMode: 34
       - serializedVersion: 2
         time: 38.916668
-        value: -391.2431
-        inSlope: 0.9049315
+        value: -391.59314
+        inSlope: 0.9147471
         outSlope: 0
         tangentMode: 69
       m_PreInfinity: 2
@@ -421,19 +421,19 @@ AnimationClip:
       - serializedVersion: 2
         time: 35.183334
         value: 47.1
-        inSlope: 0.03587269
-        outSlope: 0.03587269
+        inSlope: 0.0976371
+        outSlope: 0.0976371
         tangentMode: 34
       - serializedVersion: 2
         time: 36.883335
-        value: 47.13
-        inSlope: -0.015766444
-        outSlope: -0.015766444
+        value: 47.34
+        inSlope: 0.028784923
+        outSlope: 0.028784923
         tangentMode: 34
       - serializedVersion: 2
         time: 38.916668
-        value: 47.03
-        inSlope: -0.049181465
+        value: 47.17
+        inSlope: -0.083607554
         outSlope: 0
         tangentMode: 69
       m_PreInfinity: 2
@@ -450,24 +450,24 @@ AnimationClip:
         time: 33.15
         value: -203.37253
         inSlope: 0
-        outSlope: 2.1541014
+        outSlope: 2.114756
         tangentMode: 69
       - serializedVersion: 2
         time: 35.183334
-        value: -198.99252
-        inSlope: 2.9564614
-        outSlope: 2.9564614
+        value: -199.07253
+        inSlope: 2.8103204
+        outSlope: 2.8103204
         tangentMode: 34
       - serializedVersion: 2
         time: 36.883335
-        value: -192.60252
-        inSlope: 4.313836
-        outSlope: 4.313836
+        value: -193.11252
+        inSlope: 4.229171
+        outSlope: 4.229171
         tangentMode: 34
       - serializedVersion: 2
         time: 38.916668
-        value: -182.70253
-        inSlope: 4.8688507
+        value: -183.04253
+        inSlope: 4.9524565
         outSlope: 0
         tangentMode: 69
       m_PreInfinity: 2
