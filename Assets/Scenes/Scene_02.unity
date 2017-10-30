@@ -34765,6 +34765,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1047861430
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 27.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -58.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.44151592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.8972534
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 52.401
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758758564757258, guid: b589a60c586a4664f9442dc55431cebc,
+        type: 2}
+      propertyPath: m_Text
+      value: 10,000 BCE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114897309214480416, guid: b589a60c586a4664f9442dc55431cebc,
+        type: 2}
+      propertyPath: m_Text
+      value: AGRICULTURAL REVOLUTION
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1047861431 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1262332931052678, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047861430}
+--- !u!1 &1047861432 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1338444766326842, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047861430}
+--- !u!1 &1047861433 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1871929533375628, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 1047861430}
+--- !u!114 &1047861434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047861432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - 10,000 BCE
+  - 10,000 SM
+  initOnStart: 1
+--- !u!114 &1047861435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047861433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - AGRICULTURAL REVOLUTION
+  - REVOLUSI PERTANIAN
+  initOnStart: 1
 --- !u!4 &1048053374 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: a993b617b84918e4aa566b208b48dae6, type: 3}
@@ -46758,6 +46859,8 @@ PlayableDirector:
     value: {fileID: 852941021}
   - key: {fileID: 114287059488836312, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
     value: {fileID: 852941021}
+  - key: {fileID: 114262506304352390, guid: d37698fdb34e16b43bd5716d2e553b6b, type: 2}
+    value: {fileID: 1047861431}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1771910082
