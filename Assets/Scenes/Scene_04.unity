@@ -3332,6 +3332,68 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: f563837807b7ed84b9d675cb0c57e1ab, type: 3}
   m_PrefabInternal: {fileID: 1565220520}
+--- !u!1001 &114726231
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -331
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 49.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -335.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.18301232
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.68301296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.18301246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.6830126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 114897309214480416, guid: b589a60c586a4664f9442dc55431cebc,
+        type: 2}
+      propertyPath: m_Text
+      value: INDUSTRIAL REVOLUTION
+      objectReference: {fileID: 0}
+    - target: {fileID: 114758758564757258, guid: b589a60c586a4664f9442dc55431cebc,
+        type: 2}
+      propertyPath: m_Text
+      value: '1800 CE
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395865123988722, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -30.000002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b589a60c586a4664f9442dc55431cebc, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &117386130 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 33f721b3e62c647459979b7a024ae3ca, type: 3}
@@ -59269,6 +59331,11 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b9322efb05023c9409156f54cd961c95, type: 3}
   m_PrefabInternal: {fileID: 683241227}
+--- !u!1 &1073078805 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1262332931052678, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 114726231}
 --- !u!1001 &1075245669
 Prefab:
   m_ObjectHideFlags: 0
@@ -72321,6 +72388,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 33f721b3e62c647459979b7a024ae3ca, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1411513229 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1338444766326842, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 114726231}
+--- !u!114 &1411513231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1411513229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - 1800 CE
+  - 1800 M
+  initOnStart: 1
 --- !u!1001 &1413211071
 Prefab:
   m_ObjectHideFlags: 0
@@ -83425,6 +83512,8 @@ PlayableDirector:
     value: {fileID: 92442344}
   - key: {fileID: 114161623517133708, guid: 79e7a5cdbb9f1e64f9a0611cf0314104, type: 2}
     value: {fileID: 92442344}
+  - key: {fileID: 114944658094841326, guid: 79e7a5cdbb9f1e64f9a0611cf0314104, type: 2}
+    value: {fileID: 1073078805}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1577466602
@@ -88051,6 +88140,26 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: b9322efb05023c9409156f54cd961c95, type: 3}
   m_PrefabInternal: {fileID: 782149077}
+--- !u!1 &1726980211 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1871929533375628, guid: b589a60c586a4664f9442dc55431cebc,
+    type: 2}
+  m_PrefabInternal: {fileID: 114726231}
+--- !u!114 &1726980213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726980211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3c13c4d06e77f74bac30b4c133814f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDataSet:
+  - INDUSTRIAL REVOLUTION
+  - REVOLUSI PERINDUSTRIAN
+  initOnStart: 1
 --- !u!4 &1727264542 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 2752f5d4fc7f01346a9af3320afba024, type: 3}

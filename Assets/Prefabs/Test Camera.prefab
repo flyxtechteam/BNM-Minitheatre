@@ -359,7 +359,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1079386807909390}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -88.1, y: 0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4257927655185106}
@@ -685,11 +685,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseOverlay: {fileID: 95642486878838894}
   fadeOverlay: {fileID: 114739898487720070}
-  fadeColorIn: 0
-  fadeColorOut: 0
   timeline: {fileID: 0}
   pauseDelay: 5
   autoCycle: 0
+  timeOutDelay: 15
   timeLeft: 0
 --- !u!114 &114398869967674412
 MonoBehaviour:
