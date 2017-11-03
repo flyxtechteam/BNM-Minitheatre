@@ -54,7 +54,7 @@ public class PlaybackControl : MonoBehaviour
         {
             if (!pause)
             {
-                if (!Application.isEditor || !autoCycle)
+                if (((!Application.isEditor) && (!Debug.isDebugBuild)) || !autoCycle)
                 {
                     if (!Input.GetKeyDown(GlobalData.key_cycle))
                     {
@@ -67,7 +67,7 @@ public class PlaybackControl : MonoBehaviour
 
             else
             {
-                if ((Application.isEditor && autoCycle) || Input.GetKey(GlobalData.key_cycle))
+                if ((((Application.isEditor) || (Debug.isDebugBuild)) && autoCycle) || Input.GetKey(GlobalData.key_cycle))
                 {
                     StopCoroutine("DelayPause");
                     targetTimeScale = 1f;
