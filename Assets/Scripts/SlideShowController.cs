@@ -7,6 +7,8 @@ public class SlideShowController : MonoBehaviour {
     [SerializeField]
     private CanvasGroup self;
 
+    [Header("Slide Properties")]
+
     [SerializeField]
     private CanvasGroup [] slides;
 
@@ -14,11 +16,26 @@ public class SlideShowController : MonoBehaviour {
     private float durationPerSlide = 3f;
 
     [SerializeField]
-    private float crossfadeDuration = 1f;
+    private float slideCrossfadeDuration = 1f;
 
-    public bool isActive = false;
+    [Header("Instructions Properties")]
+
+    [SerializeField]
+    private CanvasGroup[] instructions;
+
+    [SerializeField]
+    private float durationPerInstruction;
+
+    [SerializeField]
+    private float instructionFadeDuration = 1f;
+
+    public bool isActive { private set; get; }
+
     private int activeSlideIndex = 0;
     private float lastSlideChangeTime = 0f;
+
+    private int activeInstructionIndex = 0;
+    private float lastInstructionChangeTime = 0f;
 
     public void Activate(bool _isInstant = false)
     {
@@ -54,23 +71,45 @@ public class SlideShowController : MonoBehaviour {
 
 	private void Update ()
     {
-		if (isActive)
+        if (isActive)
         {
             self.alpha += Time.deltaTime;
 
-            if (Time.time >= lastSlideChangeTime + durationPerSlide + crossfadeDuration)
+            //slides
+            if (Time.time >= lastSlideChangeTime + durationPerSlide + slideCrossfadeDuration)
             {
                 activeSlideIndex = (activeSlideIndex + 1) % slides.Length;
                 lastSlideChangeTime = Time.time;
             }
 
-            if (Time.time <= lastSlideChangeTime + crossfadeDuration)
+            if (Time.time <= lastSlideChangeTime + slideCrossfadeDuration)
             {
                 CanvasGroup activeSlide = slides[activeSlideIndex];
                 CanvasGroup lastSlide = slides[((activeSlideIndex + slides.Length) - 1) % slides.Length];
 
-                activeSlide.alpha += Time.deltaTime * crossfadeDuration;
-                lastSlide.alpha -= Time.deltaTime * crossfadeDuration;
+                activeSlide.alpha += Time.deltaTime * 1f / slideCrossfadeDuration;
+                lastSlide.alpha -= Time.deltaTime * 1f / slideCrossfadeDuration;
+            }
+
+            //instructions
+            if (Time.time >= lastInstructionChangeTime + durationPerInstruction + instructionFadeDuration * 2)
+            {
+                activeInstructionIndex = (activeInstructionIndex + 1) % instructions.Length;
+                lastInstructionChangeTime = Time.time;
+            }
+
+            if (Time.time <= lastInstructionChangeTime + instructionFadeDuration)
+            {
+                CanvasGroup activeInstruction = instructions[activeInstructionIndex];
+
+                activeInstruction.alpha += Time.deltaTime * 1f / instructionFadeDuration;
+            }
+
+            else if (Time.time >= lastInstructionChangeTime + durationPerInstruction)
+            {
+                CanvasGroup activeInstruction = instructions[activeInstructionIndex];
+
+                activeInstruction.alpha -= Time.deltaTime * 1f / instructionFadeDuration;
             }
         }
 
@@ -86,6 +125,7 @@ public class SlideShowController : MonoBehaviour {
 
         activeSlideIndex = 0;
         lastSlideChangeTime = Time.time;
+        lastInstructionChangeTime = Time.time;
         isActive = false;
 
         if (slides != null)
@@ -95,6 +135,16 @@ public class SlideShowController : MonoBehaviour {
                 CanvasGroup slide = slides[i];
 
                 slide.alpha = 0;
+            }
+        }
+
+        if (instructions != null)
+        {
+            for (int i = 0; i < instructions.Length; i++)
+            {
+                CanvasGroup instruction = instructions[i];
+
+                instruction.alpha = 0;
             }
         }
     }
