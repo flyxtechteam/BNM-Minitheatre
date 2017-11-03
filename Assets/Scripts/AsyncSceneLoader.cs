@@ -69,6 +69,6 @@ public class AsyncSceneLoader : MonoBehaviour
         string currentScene = SceneManager.GetActiveScene().name;
         SceneManager.UnloadSceneAsync(currentScene);
 
-        UnityEditor.EditorUtility.UnloadUnusedAssetsImmediate();
+        //UnityEditor.EditorUtility.UnloadUnusedAssetsImmediate();
     }
 }
