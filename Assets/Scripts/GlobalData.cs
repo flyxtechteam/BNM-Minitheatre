@@ -8,6 +8,8 @@ public static class GlobalData
     public static KeyCode key_right = KeyCode.D;
     public static KeyCode key_seat = KeyCode.S;
 
+    public static KeyCode key_toggleAutoCycle = KeyCode.Backslash;
+
     // 0 - English, 1 - Malay
     public static int language = 0;
 

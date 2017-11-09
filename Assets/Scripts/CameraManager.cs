@@ -35,7 +35,7 @@ public class CameraManager : MonoBehaviour
 
         playback.timeline = viewer.GetComponent<UnityEngine.Playables.PlayableDirector>();
 
-        Debug.Log("Now tracking " + target.name);
+        //Debug.Log("Now tracking " + target.name);
     }
 
     void Awake()

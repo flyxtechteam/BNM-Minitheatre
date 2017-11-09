@@ -7,6 +7,7 @@ TagManager:
   - viewer
   - overlay
   - camera
+  - pauseText
   layers:
   - Default
   - TransparentFX

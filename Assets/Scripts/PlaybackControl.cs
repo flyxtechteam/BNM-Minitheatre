@@ -14,8 +14,11 @@ public class PlaybackControl : MonoBehaviour
     [SerializeField] float pauseDelay = 5f;
     [SerializeField] bool autoCycle = false;
 
-    [SerializeField]
-    private float timeOutDelay = 15f;
+    [SerializeField] private float timeOutDelay = 15f;
+
+    [SerializeField] UnityEngine.UI.Text timerText;
+
+    [SerializeField] float fadePadding = 0.1f;
 
     bool pause = false;
     float scaleRate = 0.05f;
@@ -36,10 +39,13 @@ public class PlaybackControl : MonoBehaviour
             return;
         }
 
-        if (!autoCycle)
+        if (Input.GetKeyDown(GlobalData.key_toggleAutoCycle))
         {
-
+            autoCycle = !autoCycle;
         }
+
+        // if (!autoCycle) {} what's this for????
+
         // Update timeleft (for debug)
         if (timeLeft > 0f)
         {
@@ -158,9 +164,9 @@ public class PlaybackControl : MonoBehaviour
                 fadeOverlay.color = new Color(fadeOverlay.color.r, fadeOverlay.color.g, fadeOverlay.color.b, 1 - fade);
             }
             // At end of scene
-            else if (timeline.time >= timeline.duration - fadeDuration)
+            else if (timeline.time >= timeline.duration - fadePadding - fadeDuration)
             {
-                float fade = (float)(1f - ((timeline.time - (timeline.duration - fadeDuration)) / fadeDuration));
+                float fade = (float)(1f - ((timeline.time - (timeline.duration - fadePadding - fadeDuration)) / fadeDuration));
 
                 AudioListener.volume = fade;
                 fadeOverlay.color = new Color(fadeOverlay.color.r, fadeOverlay.color.g, fadeOverlay.color.b, 1 - fade);
@@ -179,15 +185,18 @@ public class PlaybackControl : MonoBehaviour
             if (pauseOverlay)
             {
                 pauseOverlay.SetBool("paused", true);
-                pauseOverlay.gameObject.SetActive(true);
+                //pauseOverlay.gameObject.SetActive(true);
             }
 
             float timeOutEndTime = Time.unscaledTime + timeOutDelay;
 
             while (Time.unscaledTime < timeOutEndTime)
             {
+                timerText.text = Mathf.RoundToInt(timeOutEndTime - Time.unscaledTime).ToString();
                 yield return null;
             }
+
+            timerText.text = "0";
 
             hasTimedOut = true;
             GlobalData.didTimeOut = true;
@@ -215,7 +224,7 @@ public class PlaybackControl : MonoBehaviour
 
             SceneManager.LoadScene("LanguageSelectv2");
 
-            pauseOverlay.gameObject.SetActive(false);
+            //pauseOverlay.gameObject.SetActive(false);
 
             hasTimedOut = false;
 

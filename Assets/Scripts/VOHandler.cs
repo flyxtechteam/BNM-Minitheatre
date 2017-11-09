@@ -25,25 +25,23 @@ public class VOHandler : MonoBehaviour
     // Counter used to cycle through VO sets each time audio is played
     int currentSet = 0;
 
+    void Awake()
+    {
+        // First time initialization
+        // Adds AudioSource and assigns VO mixer group
+        source = gameObject.AddComponent<AudioSource>();
+        source.outputAudioMixerGroup = mixerGroup;
+
+        gameObject.SetActive(false);
+
+        init = true;
+    }
+
     void OnEnable()
     {
-        if (!donePlayback)
+        if (init)
         {
-            if (init)
-            {
-                PlayNextVO();
-            }
-            else
-            {
-                // First time initialization
-                // Adds AudioSource and assigns VO mixer group
-                source = gameObject.AddComponent<AudioSource>();
-                source.outputAudioMixerGroup = mixerGroup;
-
-                init = true;
-
-                PlayNextVO();
-            }
+            PlayNextVO();
         }
     }
 

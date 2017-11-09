@@ -18,7 +18,7 @@ public class LanguageSelect : MonoBehaviour {
     Animator fillLeft, fillRight;
 
     [SerializeField]
-    UITextHandler textThankYou1, textThankYou2;
+    UITextHandler textSelected;
 
     [SerializeField]
     CanvasGroup selectionUI, thankYouUI;
@@ -267,14 +267,25 @@ public class LanguageSelect : MonoBehaviour {
         selectionUIVisible = false;
         blockInput = true;
 
-        textThankYou1.InitLanguage();
-        textThankYou2.InitLanguage();
+        UpdateUITexts();
 
         StartCoroutine(CueSceneChange());
         StartCoroutine(CueThankYouFadeIn());
 
         leftArrow.SetActive(false);
         rightArrow.SetActive(false);
+    }
+
+    void UpdateUITexts()
+    {
+        GameObject[] textObjs = GameObject.FindGameObjectsWithTag("pauseText");
+
+        foreach (GameObject textObj in textObjs)
+        {
+            textObj.GetComponent<UITextHandler>().InitLanguage();
+        }
+
+        textSelected.InitLanguage();
     }
 
     IEnumerator BlockBrakeInput()
