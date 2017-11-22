@@ -220,9 +220,10 @@ public class PlaybackControl : MonoBehaviour
             }
 
             string currentScene = SceneManager.GetActiveScene().name;
-            SceneManager.UnloadSceneAsync(currentScene);
-
-            SceneManager.LoadScene("LanguageSelectv2");
+            timeline.enabled = false;
+            SceneManager.LoadScene("LanguageSelectv2", LoadSceneMode.Single);
+            
+            //SceneManager.UnloadSceneAsync(currentScene);
 
             //pauseOverlay.gameObject.SetActive(false);
 
